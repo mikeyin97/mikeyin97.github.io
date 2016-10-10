@@ -152,6 +152,7 @@ button {
     height:75px;
     position:fixed;
     left:93%;
+    top:85%;
     display:none;
 }
 
@@ -183,8 +184,8 @@ ul{
 #footer{
     position:relative;
     margin-top:50px;
-    background-color:#ccffcc;
-    height:5em;
+    background-color:#ffffff;
+    height:2em;
     clear:both;
     width:100%;
 }
