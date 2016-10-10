@@ -97,7 +97,18 @@ button {
     background-repeat: no-repeat;
     background-size: 100%;
     background-size:cover;
-   
+}
+
+#btn1:hover{
+    background-color:#00d223;
+}
+
+#btn2:hover{
+    background-color:#00b8d2;
+}
+
+#btn3:hover{
+    background-color:#7100d2;
 }
 
 #btn1.selected{
@@ -110,6 +121,17 @@ button {
 
 #btn3.selected{
     background-color: #a268ff;
+}
+#btn1.selected:hover{
+    background-color: #00d223;
+}
+
+#btn2.selected:hover{
+    background-color: #00b8d2;
+}
+
+#btn3.selected:hover{
+    background-color: #7100d2;
 }
 
 .unselected{
