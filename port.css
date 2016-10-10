@@ -1,3 +1,4 @@
+*:focus{outline:none; !important}
 body{
     position:absolute;
     width:100%;
@@ -99,9 +100,19 @@ button {
     background-size:cover;
 }
 
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #btn1:hover{
     background-color:#00d223;
 }
+
 
 #btn2:hover{
     background-color:#00b8d2;
@@ -115,6 +126,7 @@ button {
     background-color: #8bff68;
 }
 
+#btn:focus {outline: none; !important}
 #btn2.selected{
     background-color: #68fffb;
 }
