@@ -232,23 +232,32 @@ ul{
     border-bottom:20px solid black;
 }
 
-#Extracurriculars{
-    clear:both;
+
+
+.worktext{
+    height:220px;
+    width:65%;
+    position:absolute;
+    top:15px;
+    left:390px;
+}
+
+.workimg{
     position:relative;
+    width:30%;
+    height:40%;
+    background-image: url(images/UofT_Logo.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    top:25%;
 }
 
-#Experiences ul .title{
-    list-style-type:none;
-    padding-left:0px;
-    padding-top:0px;
-    margin-top:-15px;
-}
-
-#Experiences li{
-    padding-left:0px;
-    padding-top:0px;
-    margin-top:0px;
-    clear:both;
+.workbox{
+    height: 250px;
+    position:relative;
+    border-radius:10px;
+    margin-bottom:25px;
 }
 
 .projbox{
