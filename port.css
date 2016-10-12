@@ -244,7 +244,7 @@ ul{
 
 .workimg{
     position:relative;
-    width:30%;
+    width:350px;
     height:40%;
     background-image: url(images/UofT_Logo.png);
     background-position: center; 
@@ -254,7 +254,7 @@ ul{
 }
 
 .workbox{
-    height: 250px;
+    height: 300px;
     position:relative;
     border-radius:10px;
     margin-bottom:25px;
