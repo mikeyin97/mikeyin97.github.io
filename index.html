@@ -23,12 +23,12 @@
         </div>
 
         <div class= "allelse">         
-            <button class = "unselected" id = "btn4"><a href = "#header">Top</a></button>
+            <!--<button class = "unselected" id = "btn4"><a href = "#header">Top</a></button>-->
 
             <div id = "me">
                 <h3 class = "title">Hi, I'm Michael!</h3>
 
-                <p> Welcome to my website! I'm a second year engineering science student currently studying at the University of Toronto. I'm a late bloomer in terms of coding, as I only started picking up programming in university. Since then, however, I've been coding non-stop! I love participating in design competitions and hackathons, designing and creating small electrical projects, and working on personal programming projects. Some of my main technical interests include UI design, back-end programming, machine learning, and robotics. 
+                <p> Welcome to my (in progress) website! I'm a second year engineering science student currently studying at the University of Toronto. I'm a late bloomer in terms of coding, as I only started picking up programming in university. Since then, however, I've been coding non-stop! I love participating in design competitions and hackathons, designing and creating small electrical projects, and working on personal programming projects. Some of my main technical interests include UI design, back-end programming, machine learning, and robotics. 
 
                 <p>In the (little) leisure time that I do have, I also enjoy playing sports, playing video games, snuggling with my cats, watching anime, and reading.</p>
 
@@ -37,6 +37,7 @@
 
 
                     <p> I'm always looking to collaborate on innovative projects. Feel free to shoot me a message at: <a href="mailto:ji.yin@mail.utoronto.ca" target="_top"> ji.yin@mail.utoronto.ca</a></p>
+                    <p> I encourage you to take a look at <a href="michael_resume.pdf" target="blank">my resume</a>!</p>
                     <p> You can also find me on:</p>
                     <table cellspacing="0" align = "center">
                         <thead>
@@ -70,47 +71,19 @@
 
         <div id = "projects">
             <h3 class = "title">My Personal Projects </h3>
-            <div class = "projbox" id = "p1">
-                <div class = "slides">
-                    <img src = "images/me.jpg" class = "active" id = "first1">
-                    <img src = "images/pong2.png">
-                    <img src = "images/pong3.png" id = "last1">
-                    <div class = "pointer" id = "left1"></div>
-                    <div class = "pointer" id = "right1"></div>
-                </div>        
-                <div class = "textstuff">
-                    <h4>AI Pong</h4>
-                    <p> I created an AI for Pong. This AI automatically determines and reacts to the trajectory of the ball based on a series of calculations involving angles and distances. The AI also creates a slight spin as an added challenge to the player.</p>
-                    <p>You can find the code <a href = "https://github.com/mikeyin97/Pong" target="_blank">here</a></p>
-                </div>
-            </div>
 
-            <div class = "projbox" id = "p2">
+            <h4>Current Projects </h4>
+            <div class = "projbox" id = "p4">
                 <div class = "slides">
-                    <img src = "images/gomoku1.png" class = "active" id = "first2">
-                    <img src = "images/gomoku2.png">
-                    <img src = "images/gomoku3.png" id = "last2">
-                    <div class = "pointer" id = "left2"></div>
-                    <div class = "pointer" id = "right2"></div>
+                    <img src = "images/me.jpg" class = "Slides1">
+                    <img src = "images/me.png" class = "Slides1">
+                    <img src = "images/placeholder.png" class = "Slides1">
+                    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+                    <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
                 </div>        
-                <div class = "textstuff">
-                    <h4>AI Gomoku</h4>
-                    <p> I created an AI for Gomoku. This AI evaluates all playable positions and looks for various patterns that lead to higher winning percentages, in order to develop the best move.</p>
-                    <p>You can find the code <a href = "https://github.com/mikeyin97/gomoku_game" target="_blank">here</a></p>
-                </div>
-            </div>
-
-            <div class = "projbox" id = "p3">
-                <div class = "slides">
-                    <img src = "images/me.jpg" class = "active" id = "first3">
-                    <img src = "images/me.png">
-                    <img src = "images/placeholder.png" id = "last3">
-                    <div class = "pointer" id = "left3"></div>
-                    <div class = "pointer" id = "right3"></div>
-                </div>        
-                <div class = "textstuff">
-                    <h4>3 Data Collection and Display Algorithms</h4>
-                    <p> I wrote 3 algorithms for real-time data collection, analysis, and classification. One uses fuzzy c-means clustering in order to perform unsupervised learning, one uses logistic regression to classify new data, and one uses the characteristics of linear regression to classify data curves. </p>
+                <div class = "worktext">
+                    <h3>AeroGrow</h3>
+                    <p> An aeroponics-inspired, ultrasonic-misting planting system that digitalizes the processes required for effecient plant growth through the use of sensors and actuators. Mahcine learning algorithms were applied to analyze and optimize the parameters of plant growth. </p>
                 </div>
             </div>
 
@@ -122,11 +95,73 @@
                     <div class = "pointer" id = "left4"></div>
                     <div class = "pointer" id = "right4"></div>
                 </div>        
-                <div class = "textstuff">
-                    <h3>AeroGrow</h3>
-                    <p> Website, Sensors Pics</p>
+                <div class = "worktext">
+                    <h3>Similarity Checker</h3>
+                    <p> A script that will take a text document as an input, along with various websites. It will parse the text on the websites, and through a comparison algorithm, return the percent similarity of the text document. </p>
                 </div>
             </div>
+
+            <div class = "projbox" id = "p4">
+                <div class = "slides">
+                    <img src = "images/me.jpg" class = "active" id = "first4">
+                    <img src = "images/me.png">
+                    <img src = "images/placeholder.png" id = "last4">
+                    <div class = "pointer" id = "left4"></div>
+                    <div class = "pointer" id = "right4"></div>
+                </div>        
+                <div class = "worktext">
+                    <h3>Physics Modelling</h3>
+                    <p> A web app that will model the various spring phenomena that I've learned in lecture, including simple harmonic motion, damped motion, coupled oscillators, and forced oscillators. Will have sliders that the user can change to alter the conditions of damping, spring resistance, etc.  </p>
+                </div>
+            </div>
+
+
+            <h4>Completed Projects </h4>
+            <div class = "projbox" id = "p1">
+                <div class = "slides">
+                    <img src = "images/me.jpg" class = "active" id = "first1">
+                    <img src = "images/pong2.png">
+                    <img src = "images/pong3.png" id = "last1">
+                    <div class = "pointer" id = "left1"></div>
+                    <div class = "pointer" id = "right1"></div>
+                </div>        
+                <div class = "worktext">
+                    <h4>AI Pong</h4>
+                    <p> A Pong AI that automatically determines and reacts to the trajectory of the ball based on a series of calculations involving angles and distances. The AI also creates a slight spin as an added challenge to the player. </p>
+                    <p>You can find the code <a href = "https://github.com/mikeyin97/Pong" target="_blank">here.</a></p>
+                </div>
+            </div>
+
+            <div class = "projbox" id = "p2">
+                <div class = "slides">
+                    <img src = "images/gomoku1.png" class = "active" id = "first2">
+                    <img src = "images/gomoku2.png">
+                    <img src = "images/gomoku3.png" id = "last2">
+                    <div class = "pointer" id = "left2"></div>
+                    <div class = "pointer" id = "right2"></div>
+                </div>        
+                <div class = "worktext">
+                    <h4>AI Gomoku</h4>
+                    <p> A Gomoku AI evaluates all playable positions and looks for various patterns that lead to higher winning percentages (via a points based evaluation), in order to develop the best move.</p>
+                    <p>You can find the code <a href = "https://github.com/mikeyin97/gomoku_game" target="_blank">here.</a></p>
+                </div>
+            </div>
+
+            <div class = "projbox" id = "p3">
+                <div class = "slides">
+                    <img src = "images/me.jpg" class = "active" id = "first3">
+                    <img src = "images/me.png">
+                    <img src = "images/placeholder.png" id = "last3">
+                    <div class = "pointer" id = "left3"></div>
+                    <div class = "pointer" id = "right3"></div>
+                </div>        
+                <div class = "worktext">
+                    <h4>Data Collection and Display Algorithms</h4>
+                    <p> Algorithms for real-time data collection, analysis, and classification. Includes fuzzy c-means and k-means clustering algorithms that perform unsupervised learning, logistic regression algorithms that classifies new data, and linear regression algorithms to classify data curves. </p>
+                    <p>Some of the code can be found <a href = "https://github.com/romxz/EMG" target="_blank">here.</a></p>
+                </div>
+            </div>
+
 
             <div class = "projbox" id = "p5">
                 <div class = "slides">
@@ -136,9 +171,9 @@
                     <div class = "pointer" id = "left5"></div>
                     <div class = "pointer" id = "right5"></div>
                 </div>        
-                <div class = "textstuff">
+                <div class = "worktext">
                     <h3>Dino Dash</h3>
-                    <p> I created an AI for Pong</p>
+                    <p> An educational game designed for a school project. This game allows children to run on mats with embedded pressure sensors, whose data will be sent to a computer who will calculate the speed of the children and display an analogous dinosaur. </p>
                 </div>
             </div>
 
