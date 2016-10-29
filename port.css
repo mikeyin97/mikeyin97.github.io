@@ -162,7 +162,8 @@ button {
     position: relative;
     top:100px;
     right:60px;
-    background-image: url("images/bag-512.png");
+    background-image: url("images/briefcase1.png");
+    background-size: 90%;
     border:3px solid #00d223;
 }
 
@@ -332,6 +333,22 @@ ul{
     border-right:20px solid black;
 }
 
+#left6:hover{
+    cursor:pointer;
+    border-right:20px solid black;
+}
+
+#left6:active{
+    border-right:20px solid black;
+}
+#left7:hover{
+    cursor:pointer;
+    border-right:20px solid black;
+}
+
+#left7:active{
+    border-right:20px solid black;
+}
 #right1:hover{
     cursor:pointer;
     border-left:20px solid black;
@@ -373,7 +390,22 @@ ul{
     border-left:20px solid black;
 }
 
+#right6:hover{
+    cursor:pointer;
+    border-left:20px solid black;
+}
 
+#right6:active{
+    border-left:20px solid black;
+}
+#right7:hover{
+    cursor:pointer;
+    border-left:20px solid black;
+}
+
+#right7:active{
+    border-left:20px solid black;
+}
 
 #right1{
     height:0;
@@ -485,6 +517,54 @@ ul{
 }
 
 #left5{
+    height:0;
+    width:0;
+    border-left:20px solid transparent;
+    border-right:20px solid rgba(0, 0, 0, .5);
+    border-bottom:20px solid transparent;
+    border-top:20px solid transparent;
+    position:absolute;
+    top:85px;
+    left:-50px;
+}
+#right7{
+    height:0;
+    width:0;
+    border-left:20px solid rgba(0, 0, 0, .5);
+    border-right:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-top:20px solid transparent;
+    position:absolute;
+    top:85px;
+    left:310px;
+    
+}
+
+#left7{
+    height:0;
+    width:0;
+    border-left:20px solid transparent;
+    border-right:20px solid rgba(0, 0, 0, .5);
+    border-bottom:20px solid transparent;
+    border-top:20px solid transparent;
+    position:absolute;
+    top:85px;
+    left:-50px;
+}
+#right6{
+    height:0;
+    width:0;
+    border-left:20px solid rgba(0, 0, 0, .5);
+    border-right:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-top:20px solid transparent;
+    position:absolute;
+    top:85px;
+    left:310px;
+    
+}
+
+#left6{
     height:0;
     width:0;
     border-left:20px solid transparent;
