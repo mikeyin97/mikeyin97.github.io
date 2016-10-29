@@ -188,14 +188,32 @@ button {
     position:fixed;
     left:93%;
     top:85%;
-    display:none;
+    font-size:30px;
+    border: 1px solid black;
+    display = "none" 
 }
 
 button:focus {
     background-color: #4CAF50;
     color: white;
 }
-*/
+.scrollToTop{
+	width:75px; 
+	height:75px;
+	text-align:center; 
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:80%;
+	right:20px;
+	display:none;
+	background: url('images/arrow2.png') center;
+    background-size:75px, 75px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
 
 .block{
     position:relative;
