@@ -75,7 +75,6 @@ $(document).ready(function(){
             setTimeout(function(){
   $("#message4").css("color", "black");
 }, 2000);
-            $("#myform")[0].reset();
         }
     });
 });
