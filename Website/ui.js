@@ -34,6 +34,7 @@ $(document).ready(function(){
     $("#chatsubmit").click(function(){
         var value = $('#msg').val();
         var check = 1;
+        //alert(value);
         if ((value.toLowerCase() == "hi")||(value.toLowerCase() == "hello")||(value.toLowerCase() == "hey")||(value.toLowerCase() == "hi!")||(value.toLowerCase() == "hello!")||(value.toLowerCase() == "hey!")){
             check = 0;
         }
@@ -51,8 +52,8 @@ $(document).ready(function(){
             setTimeout(function(){
   $("#message2").css("color", "black");
 }, 1000);
-            $("#myform")[0].reset();
             i+=1;
+                //alert(i);
         }
             
             else {
@@ -60,13 +61,14 @@ $(document).ready(function(){
                 $("#message2").text("idk");
   $("#message2").css("color", "black");
 }, 1000);
-            $("#myform")[0].reset();
             i+=1;
         } 
-            }
             
+            }
         else{
-            var value = $('#msg').val();
+            //alert(value);
+            //alert(check);
+            //alert(i);
             
             $("#message3").text(value);
             $("#message3").css("color", "black");
