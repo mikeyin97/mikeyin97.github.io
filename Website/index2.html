@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <title>Pillar</title>
+        
+        <link href="stylesheet.css" rel="stylesheet">
+        
+    </head>
+    
+<body>
+
+<div class="header">
+<h2>Pillar Login</h2>
+</div>
+    
+<form action="http://127.0.0.1:8000/process_post" method="POST">
+  <div class="imgcontainer">
+    <img src="agent-e202505f.png" alt="Avatar" class="avatar" height=150>
+  </div>
+
+  <div class="container" style="text-align:center">
+    <div class="wrapper"><label><b>Username</b></label></div>
+    <input type="text" placeholder="Enter Username" name="uname" required style="text-align:center">
+
+    <div class="wrapper"><label><b>Password</b></label></div>
+    <input type="password" placeholder="Enter Password" name="psw" required style="text-align:center">
+        
+    <div class="wrapper"><button type="submit" value="Submit">Login</button></div>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+  </div>
+</form>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
