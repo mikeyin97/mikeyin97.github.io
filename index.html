@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
     <head>
-
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <title>My Portfolio</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type = "text/css" rel="stylesheet" href="port.css" />
         <script type = "text/javascript" src="jquery.js"></script>
         <script type='text/javascript' src='port.js'></script>
         <script type='text/javascript' src='port2.js'></script>
         <script type='text/javascript' src='jquery-ui-1.12.1/jquery-ui.js'></script>
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -19,7 +22,7 @@
             <button class = "unselected" class = "noSelect" id = "btn3"></button>
 
             <h1>Michael Yin</h1>
-            <h2>Aspiring Engineer and Programming Enthusiast</h2>
+            <h2>Aspiring Engineer // Coding Enthusiast</h2>
         </div>
 
         <div class= "allelse"> 
@@ -55,17 +58,17 @@
 
             <div id = "work">
                 <h3 class = "title">My Work Experience</h3>
-                <div class = "workbox">
-                    <div class = "workimg">
+                <!--<div class = "workbox">-->
+                    <div class = "workimg" class="col-sm-12 col-md-3">
                     </div>        
-                    <div class = "worktext">
+                    <div class = "worktext" class="col-sm-12 col-md-9">
                         <h4>Researcher, May 2016 to August 2016</h4>
                         <p> During the summer, I worked at the <i>Intelligent Sensory Microsystems Laboratory</i> at the University of Toronto. In collaboration with a startup called MyAbilities Inc., we performed research and proof-of-concept development of a wearable biomedical device for injury and performance testing.</p>
                         <p> Some of my responsibilities were to
                         <ul><li>Collect and analyze research data in real-time using various frequency processing and machine learning algorithms, written primarily in Arduino, Python, and MATLAB. </li>
                             <li>Store motion sensor data in both xml format as well as on a local server  using node.js</li>
                             <li>Help animate a 3D model of the human head and torso on a web browser using this stored data. This was done using HTML, CSS, and Javascript. </li></ul></p>
-                </div>
+                <!--</div>-->
             </div>
         </div>   
 
@@ -81,7 +84,7 @@
                     <div class = "pointer" id = "left4"></div>
                     <div class = "pointer" id = "right4"></div>
                 </div>        
-                <div class = "worktext">
+                <div class = "projtext">
                     <h3>AI Pong</h3>
                     <p> A Pong AI that automatically determines and reacts to the trajectory of the ball based on a series of calculations involving angles and distances. The AI also creates a slight spin as an added challenge to the player. <b>Engineering Science Pong Tournament - First Place</b> </p>
                     <p>You can find the code <a href = "https://github.com/mikeyin97/Pong" target="_blank">here.</a></p>
@@ -96,7 +99,7 @@
                     <div class = "pointer" id = "left5"></div>
                     <div class = "pointer" id = "right5"></div>
                 </div>        
-                <div class = "worktext">
+                <div class = "projtext">
                     <h3>AI Gomoku</h3>
                     <p> A Gomoku AI evaluates all playable positions and looks for various patterns that lead to higher winning percentages (via a points based evaluation), in order to develop the best move.
                      
@@ -113,7 +116,7 @@
                     <div class = "pointer" id = "left6"></div>
                     <div class = "pointer" id = "right6"></div>
                 </div>        
-                <div class = "worktext">
+                <div class = "projtext">
                     <h3>Data Collection and Display Algorithms</h3>
                     <p> Algorithms for real-time data collection, analysis, and classification. Includes fuzzy c-means and k-means clustering algorithms that perform unsupervised learning, logistic regression algorithms that classifies new data, and linear regression algorithms to classify data curves. </p>
                     <p>Some of the code can be found <a href = "https://github.com/romxz/EMG" target="_blank">here.</a></p>
@@ -143,7 +146,7 @@
                     <div class = "pointer" id = "left1"></div>
                     <div class = "pointer" id = "right1"></div>
                 </div>        
-                <div class = "worktext">
+                <div class = "projtext">
                     <h3>Augmented Reality Graph Visualization and Neural Network Simulation</h3>
                     <p> A 3D augmented reality web application that parses and visualizes real-time updating JSON data on a host server. Additional supervised learning was performed on the dataset using a 3-layer neural network for predicting output based on provided input variables. This application was applied to the provided advertisement dataset to visualize the time, platform, and format in which a company should represent their ad to garner the most clicks. <b>HackwithIX - Third Place Winner</b></p>
                     
@@ -162,7 +165,7 @@
                     <div class = "pointer" id = "left2"></div>
                     <div class = "pointer" id = "right2"></div>
                 </div>        
-                <div class = "worktext">
+                <div class = "projtext">
                     <h3>Let Out</h3>
                     <p> A mobile and web social media platform prototype that allows registered users to post for help and comment their advice completely anonymously. The goal of this project was to provide users with a place to anonymously vent their frustrations and problems and receive anonymous help, which can often be difficult in real life. Incorporated various features into the platform including a chatbot and random daily images and quotes.  
                     

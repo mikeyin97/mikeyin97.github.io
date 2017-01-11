@@ -37,14 +37,14 @@ $(document).ready(function(){
         $("#work").hide()
         //$("#header").css("background-color", "#c581e3");
         $("#header").animate({backgroundColor: "#c581e3"});
-        
+
     });
     $("#right1").click(function(){
         var $active= $("#p1 .slides .active");
         if ( $('#p1 .active').attr('id') == "last1" ){
             $("#p1 #first1").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -55,7 +55,7 @@ $(document).ready(function(){
         if ( $('#p1 .active').attr('id') == "first1" ){
             $("#p1 #last1").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
@@ -66,7 +66,7 @@ $(document).ready(function(){
         if ( $('#p2 .active').attr('id') == "last2" ){
             $("#p2 #first2").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -77,7 +77,7 @@ $(document).ready(function(){
         if ( $('p2 .active').attr('id') == "first2" ){
             $("#p2 #last2").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
@@ -88,7 +88,7 @@ $(document).ready(function(){
         if ( $('#p3 .active').attr('id') == "last3" ){
             $("#p3 #first3").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -99,7 +99,7 @@ $(document).ready(function(){
         if ( $('#p3 .active').attr('id') == "first3" ){
             $("#p3 #last3").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
@@ -110,7 +110,7 @@ $(document).ready(function(){
         if ( $('#p4 .active').attr('id') == "last4" ){
             $("#p4 #first4").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -121,7 +121,7 @@ $(document).ready(function(){
         if ( $('#p4 .active').attr('id') == "first4" ){
             $("#p4 #last4").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
@@ -132,7 +132,7 @@ $(document).ready(function(){
         if ( $('#p5 .active').attr('id') == "last5" ){
             $("#p5 #first5").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -143,7 +143,7 @@ $(document).ready(function(){
         if ( $('#p5 .active').attr('id') == "first5" ){
             $("#p5 #last5").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
@@ -154,7 +154,7 @@ $(document).ready(function(){
         if ( $('#p6 .active').attr('id') == "last6" ){
             $("#p6 #first6").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -165,7 +165,7 @@ $(document).ready(function(){
         if ( $('#p6 .active').attr('id') == "first6" ){
             $("#p6 #last6").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
@@ -176,7 +176,7 @@ $(document).ready(function(){
         if ( $('#p7 .active').attr('id') == "last7" ){
             $("#p7 #first7").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.next().addClass("active");
             $active.removeClass("active");
@@ -187,25 +187,40 @@ $(document).ready(function(){
         if ( $('#p7 .active').attr('id') == "first7" ){
             $("#p7 #last7").addClass("active");
             $active.removeClass("active");
-            }
+        }
         else{
             $active.prev().addClass("active");
             $active.removeClass("active");
         } 
     });
 
+    
+    if (($( window ).width())>1000){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 150) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+            });
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+            
+        }
+    if (($( window ).width())<1000){
+        $(".slides").hide();
+        //$(".projtext").css("height", "");
+        $(".projtext").css("left", "0px");
+        $(".projtext").css("width", "100%");
+        //$(".projtext").css("position", "");
+        //$(".projtext").css("top", "");
+        
+        }
+                         
+                      
+        //Click event to scroll to top
 
-    $(window).scroll(function(){
-		if ($(this).scrollTop() > 150) {
-            $('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
-	//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-});
+
+    });
