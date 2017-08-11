@@ -1,0 +1,100 @@
+ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Ti92Pluspc", sans-serif;}
+
+#name{
+    padding-top:100px;
+    padding-bottom:15px;
+    text-align: right;
+}
+
+.vertical-menu a {
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 15px; /* Add some padding */
+    padding-right:10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #000000; /* Dark grey background on mouse-over */
+    color:white;
+}
+
+.aParent div {
+  float: left;
+  clear: none; 
+}
+
+.vertical-menu a.active {
+    background-color: #000000; 
+    color: white;
+}
+
+.bodytext{
+    display:none;
+
+    text-align: right;
+}
+
+.visible{
+    display:block;
+    margin-left:10px;
+    text-align: right;
+}
+
+ul {
+    color:#000000;
+    list-style: none;
+    padding: 0;
+    color:#000000;}
+
+a{
+    color:#000000;
+}
+a:hover{
+    cursor:pointer;
+    color:#FFFFFF;
+    background-color:#000000;
+}
+
+.toggle:hover{
+    cursor:pointer;
+    color:#FFFFFF;
+    background-color:#000000;
+}
+    
+ul.inner {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+}
+
+ul.inner li{
+    list-style-type: circle;
+    font-size:  12px;
+}
+
+ul.inner.show{
+    display:block;
+}
+  
+ul li {
+        margin: .5em 0;
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.righttext{
+    display:none;
+}
+
