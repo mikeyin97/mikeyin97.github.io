@@ -1,9 +1,6 @@
-@font-face {
-    font-family: Ti92Pluspc;
-    src: url('Ti92Pluspc-unicode.tff'); 
-}
+@font-face { font-family: ti92; src: url('ti92.ttf'); } 
 
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: Ti92Pluspc, sans-serif;}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: ti92, sans-serif;}
 
 #name{
     padding-top:100px;
