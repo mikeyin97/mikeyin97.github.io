@@ -11,20 +11,18 @@ function typeWriter(text, n) {
 $(document).ready(function(){
     var text = $('.test').data('text');
     typeWriter(text, 0);
-   
+
     $(".righttext").css("display", "inline");
-    
-   
-    
+
+
+
     $('.tab').click(function(){
-        
+
         var $this = $(this);
         if ($this.hasClass("active")== false){
             $this.parent().find('.active').removeClass('active');
             $this.addClass('active');
-            console.log($this.html().slice(2));
             var $text = document.getElementById($this.html().slice(2));
-            console.log($text)
             var element = $("body").find(".visible");
             element.removeClass("visible");
             var element = $("body").find(".show");
@@ -35,6 +33,21 @@ $(document).ready(function(){
 
 
     });
+
+    $('.mtab').click(function(){
+
+        var $this = $(this);
+        console.log("m" + $this.html());
+        var $text = document.getElementById("m"+$this.html());
+        console.log($text);
+        var element = $("body").find(".mvisible");
+        element.removeClass("mvisible");
+        var element = $("body").find(".show");
+        element.removeClass("show");
+        $text.classList.add('mvisible');
+    });
+    
+   
 
     $('.toggle').click(function(e) {
         e.preventDefault();
@@ -52,5 +65,23 @@ $(document).ready(function(){
 
     });
 
+
+    /*$('#button').click(function(e) {
+        var $this = $(this);
+        openNav()
+    });
+    $(":not(#button)").click(function(e) {
+        var $this = $(this);
+        closeNav()
+    });*/
+
 });
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
