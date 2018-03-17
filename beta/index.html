@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="assets/favicon.jpg">
+        <title>Michael Yin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href = "styles.css">
+        <script type="text/javascript" src="jquery.maphilight.min.js"></script>    
+    </head>
+    <body style="max-width:1600px">
+        <div class="col-xs-4" id="info">
+            <div class = "textbox" id = "intro">
+            <h1 class = "title" data-text = "Welcome to my website."></h1>
+            <h4><br><br><br>Select something to begin!
+            </h4>
+            </div>
+            
+            
+            <div hidden class = "textbox" id = "book1txt">
+            <h1 class = "title" id = "book1title" data-text = "Textbooks "></h1>
+            <h4><br> +10 knowledge
+            <br> -10 interest
+            <br><br> Large selection of various textbooks on a variety of topics in physics, philosophy, mathematics, statistics, and computer science. "Required" for class.
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "book2txt">
+            <h1 class = "title" id = "book2title" data-text = "Books "></h1>
+            <h4><br> +15 entertainment
+            <br> +5 vocabulary
+            <br><br> Collection of various books including classics, graphic novels, non-fiction, etc. Most seem to either be from the fantasy and/or romance genre. 
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "game1txt">
+            <h1 class = "title" id = "game1title" data-text = "Video Games"></h1>
+            <h4><br> +20 entertainment
+            <br> -15 time
+            <br><br> Console games such as Melee, Pokemon, and Splatoon litter the shelf.  
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "game2txt">
+            <h1 class = "title" id = "game2title" data-text = "Controller"></h1>
+            <h4><br> +10 nostalgia
+            <br> +2 endurance
+            <br><br> A controller worn-out from the hundreds of hours playing spacies in Melee.    
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "cat2txt">
+            <h1 class = "title" id = "cat2title" data-text = "Po"></h1>
+            <h4><br> +100 fluffiness
+            <br> +100 cuteness
+            <br> +100 excitability    
+            <br><br> An excitable cat. Likes to play and eat. Older brother of Yuan.    
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "cat1txt">
+            <h1 class = "title" id = "cat1title" data-text = "Yuan"></h1>
+            <h4><br> +100 fluffiness
+            <br> +100 cuteness
+            <br> +100 calmness    
+            <br><br> An relaxed cat. Likes to sleep. Younger brother of Po.    
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "shuttletxt">
+            <h1 class = "title" id = "shuttletitle" data-text = "Shuttlecock"></h1>
+            <h4><br> +10 strength
+            <br> +10 endurance    
+            <br><br> Utilized to play badminton. Worn from multiple uses.   
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "bballtxt">
+            <h1 class = "title" id = "bballtitle" data-text = "Basketball"></h1>
+            <h4><br> +10 strength
+            <br> +20 endurance    
+            <br><br> "Official NBA ball" signed by Demar Derozan. Maybe this year will be the Raptors' year to win?
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "drinktxt">
+            <h1 class = "title" id = "drinktitle" data-text = "Energy Drink"></h1>
+            <h4><br> +10 awakeness
+            <br> Passive: grogginess next morning
+            <br><br> Increased energy to get through the night. You'll feel awful tomorrow though. 
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "laptoptxt">
+            <h1 class = "title" id = "laptoptitle" data-text = "Laptop"></h1>
+            <h4><br> +/- ? efficiency 
+            <br><br> Used to research, <a href="https://github.com/mikeyin97" target="blank" style = "text-decoration: underline">complete side projects</a>, and finish assignments half the time. Used to browse memes, play Fortnite, watch videos, and read manga the other half. 
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "headphonestxt">
+            <h1 class = "title" id = "headphonestitle" data-text = "Headphones"></h1>
+            <h4><br> +10 happiness
+            <br><br> 
+            </h4> Probably blasting a playlist that's an amalgram of k-pop, j-pop, c-pop, pop, rock, hip-hop and rap. 
+            </div>
+            
+            <div hidden class = "textbox" id = "fridgetxt">
+            <h1 class = "title" id = "fridgetitle" data-text = "Fridge"></h1>
+            <h4><br> +10 storage
+            <br> -10 hunger  
+            <br><br> Contains a variety of different foodstuffs. 
+            </h4>
+            </div>
+            
+            <div hidden class = "textbox" id = "metxt">
+            <h1 class = "title" id = "metitle" data-text = "Mike Yin"></h1>
+            <h4> <br><br>It's me I guess. <br><br><br>You can find my resume <a href="/files/swe_resume.pdf" target="blank" style = "text-decoration: underline">here</a> 
+            <p><br/><br/>You can find me on:
+                    <br/></p>
+                <p><a href="https://github.com/mikeyin97" target="_blank" style = "text-decoration: underline">Github</a>
+                <p><a href="https://www.linkedin.com/in/michael-yin" target="_blank" style = "text-decoration: underline">LinkedIn</a></p>
+                <p><a href="https://www.facebook.com/mikeyin123" target="_blank" style = "text-decoration: underline">Facebook</a></p>
+            </h4>
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-xs-8" id="imagecontainer">
+        <div id="imagepos">
+            <span class="centerer"></span>
+            <img id="ImageMap1" src="assets/room.gif" usemap="#ImageMapmapAreas" />
+            <map id="ImageMapmapAreas" name="ImageMapmapAreas">
+                <area alt="book1" id="book1" title="" shape="poly" href="#" coords="0,310,8,310,9,304,38,304,38,324,77,324,77,338,0,338" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="book2" id="book2" shape="poly" coords="1,357,68,358,68,393,0,392" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="gamecube" shape="poly" id = "game1" coords="13,427,13,447,47,447,47,428" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="controller" shape="poly" id="game2" coords="54,446,58,441,63,440,68,440,71,440,74,440,77,439,81,440,83,446,83,442,82,448,69,445,57,447" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="cat1" shape="poly" id="cat1" coords="45,269,40,265,41,250,42,238,46,244,59,245,66,239,67,247,67,258,77,256,89,257,99,267,102,280,102,284,120,280,124,269,122,266,124,259,130,269,128,277,120,286,107,289,77,289,50,288,43,287,42,279" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="cat2" shape="poly" id="cat2" coords="220,505,213,495,212,484,217,477,218,471,209,472,202,466,210,464,216,463,224,466,225,475,218,485,223,498,235,491,245,489,253,490,256,492,264,466,268,474,280,474,285,467,289,493,278,498,267,516,278,531,281,532,271,533,263,524,265,532,260,533,259,522,242,511,245,522,248,532,241,532,237,524,233,528,241,532,230,533" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="shuttle" shape="poly" id = "shuttle" coords="349,534,365,534,357,517" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="basketball" title="" href="#" id = "bball" shape="poly" coords="411,479,395,484,386,495,385,503,385,513,389,522,395,528,404,532,418,532,429,524,436,518,439,506,435,494,428,485,420,481,406,479" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="drink" shape="poly" id ="drink" coords="729,399,738,398,738,422,729,423" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="laptop" id="laptop" shape="poly" coords="564,374,633,372,659,418,688,417,692,422,585,422" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="headphones" id="headphones" shape="poly" coords="677,331,677,351,685,351,686,329,677,318,664,307,659,302,655,297,642,301,629,303,621,307,612,319,611,328,609,342,611,348,615,329,614,319,620,314,625,309,634,303,645,301,653,300,662,307,670,319,676,324,677,324" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="me" shape="poly" id="me" coords="612,347,620,360,626,368,635,376,637,383,646,391,650,402,656,411,659,416,666,417,673,417,689,417,694,424,702,421,669,365,679,354,673,324,658,310,650,305,641,306,634,309,627,315,621,317,618,320,635,304,618,320,617,320" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+                <area alt="fridge" shape="poly" id="fridge" coords="843,188,843,532,898,532,898,188" data-maphilight='{"strokeColor":"ffffff","strokeWidth":5,"fillColor":"e0e1e2","fillOpacity":0.6}'/>
+            </map>
+        </div>
+        </div>
+
+
+    </body>
+</html>
