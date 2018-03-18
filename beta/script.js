@@ -15,21 +15,31 @@ function changeText(clicked){
     typeWriter(text, 0);
 }
 
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    console.log(h);
+    console.log("HI");
+    return h;
+}
+
 $(document).ready(function(){
     $('#ImageMap1').maphilight();
-    
+
     var text = $('.title').data('text');
     typeWriter(text, 0);
-    
+
     $( "area" ).click(function() {
         changeText(this.id);
     });
-    
-    /*$( "#book1" ).click(function() {
-        $(".textbox").hide();
-        $("#"+this.id+"txt").show();
-        var text = $('#'+this.id+'title').data('text');
-        typeWriter(text, 0);
-    });*/
+    var today = new Date();
+    var h = today.getHours();
+    if ((h>=19)||(h<=8)) {
+        console.log("HI");
+        $('#ImageMap1').attr("src","assets/room.gif");
+    }
+    else{
+        $('#ImageMap1').attr("src","assets/room2.gif");
+    }
 });
 
