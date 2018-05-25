@@ -25,7 +25,7 @@ input, textarea, select, a { outline: none; }
     background-color: white;
     color:red;
     padding:10px;
-    left:48vw;
+    left:15vw;
 }
 body{
     overflow:hidden;
