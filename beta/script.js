@@ -35,11 +35,11 @@ $(document).ready(function(){
     var today = new Date();
     var h = today.getHours();
     if ((h>=19)||(h<=8)) {
-        console.log("HI");
         $('#ImageMap1').attr("src","assets/room.gif");
     }
     else{
-        $('#ImageMap1').attr("src","assets/room2.gif");
+        $('#ImageMap1').attr("src","assets/room.gif");
+        //$('#ImageMap1').attr("src","assets/room2.gif");
     }
 });
 
