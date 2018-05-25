@@ -1,96 +1,63 @@
-@font-face { font-family: ti92; src: url('ti92.ttf'); } 
+@font-face { font-family: ti92; src: url('assets/slkscr.ttf'); } 
 
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: ti92, sans-serif;}
 
-#name{
-    padding-top:100px;
-    padding-bottom:15px;
-    text-align: right;
+body,h1,h2,h3,h4,h5,h6,.w3-wide {
+    font-family: ti92, sans-serif;
+    color:#f9f9f9;
 }
 
-.vertical-menu a {
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 15px; /* Add some padding */
-    padding-right:10px;
-    text-decoration: none; /* Remove underline from links */
+h1{
+    font-size:5vh;
 }
 
-.vertical-menu a:hover {
-    background-color: #000000; /* Dark grey background on mouse-over */
-    color:white;
+input:focus {
+    outline:none;
+    box-shadow:none
+}
+input, textarea, select, a { outline: none; }
+
+body{
+    overflow:hidden;
+    background-color:black;
+    padding:0;
+    margin:0;
 }
 
-.aParent div {
-  float: left;
-  clear: none; 
+#info{
+    background-color:black;
+    height:100vh;
+    padding-left:4vw;
+}
+#imagecontainer{
+    background-color:black;
+    height:100vh;
+    padding-left:4vw;
+    padding-top:4vw;
+    text-align: center; 
+    justify-content: center;
 }
 
-.vertical-menu a.active {
-    background-color: #000000; 
-    color: white;
+#imagepos{
+    background-color:black;
+    height:95%;
+    width:95%;
+    background-repeat: no-repeat;
 }
 
-.bodytext{
-    display:none;
-    text-align: right;
-}
-
-.mbodytext{
-    display:none;
-    text-align: right;
-}
-
-.visible{
-    display:inline;
-    margin-left:10px;
-    text-align: right;
-}
-
-.mvisible{
-    display:block;
-    margin-left:10px;
-    text-align: right;
-}
-
-ul {
-    color:#000000;
-    list-style: none;
-    padding: 0;
-    color:#000000;}
-
-a{
-    color:#000000;
-}
-a:hover{
-    cursor:pointer;
-    color:#FFFFFF;
-    background-color:#000000;
-}
-
-.toggle:hover{
-    cursor:pointer;
-    color:#FFFFFF;
-    background-color:#000000;
-}
+#ImageMap1
+{
+    display: inline-block;
+    vertical-align: middle;
     
-ul.inner {
-        padding-left: 1em;
-        overflow: hidden;
-        display: none;
 }
 
-ul.inner li{
-    list-style-type: none;
-    font-size:  12px;
+.title{
+    margin-top:10vh;
+    
 }
 
-ul.inner.show{
-    display:block;
-}
-  
-ul li {
-        margin: .5em 0;
+#book1:hover{
+    cursor:pointer;
 }
 
 .anim-typewriter{
@@ -105,70 +72,7 @@ ul li {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
-
-.righttext{
-    display:none;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 @media screen and (max-height: 500px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-#mobilename{
-    padding-top = -100px;
-    text-align: right;
-}
-
-.button{
-    top:15px;
-}
-
-#mobilebody{
-    height:90vh;
-}
-
-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
