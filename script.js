@@ -18,8 +18,6 @@ function changeText(clicked){
 function startTime() {
     var today = new Date();
     var h = today.getHours();
-    console.log(h);
-    console.log("HI");
     return h;
 }
 
@@ -32,14 +30,5 @@ $(document).ready(function(){
     $( "area" ).click(function() {
         changeText(this.id);
     });
-    var today = new Date();
-    var h = today.getHours();
-    if ((h>=19)||(h<=8)) {
-        $('#ImageMap1').attr("src","assets/room.gif");
-    }
-    else{
-        $('#ImageMap1').attr("src","assets/room.gif");
-        //$('#ImageMap1').attr("src","assets/room2.gif");
-    }
 });
 

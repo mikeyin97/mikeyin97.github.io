@@ -39,16 +39,18 @@ body{
     height:100vh;
     padding-left:4vw;
 }
+
 #imagecontainer{
+    border: 1px solid white;
     background-color:black;
     height:100vh;
-    padding-left:4vw;
     padding-top:4vw;
     text-align: center; 
     justify-content: center;
 }
 
 #imagepos{
+    border: 1px solid red;
     background-color:black;
     height:95%;
     width:95%;
@@ -56,11 +58,22 @@ body{
     position:relative;
 }
 
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
 #ImageMap1
 {
     display: inline-block;
     vertical-align: middle;
-    
 }
 
 .title{
