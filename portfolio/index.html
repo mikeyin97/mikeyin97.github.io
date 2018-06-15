@@ -1,149 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" href="assets/favicon.jpg">
+        <link rel="icon" href="../assets/favicon.jpg">
         <title>Michael Yin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <link rel="stylesheet" href = "styles.css">
-        <script type="text/javascript" src="jquery.maphilight.min.js"></script>
-        <script>
-            function startTime() {
-                var today = new Date();
-                var h = today.getHours();
-                var m = today.getMinutes();
-                var s = today.getSeconds();
-                m = checkTime(m);
-                s = checkTime(s);
-                document.getElementById('clock').innerHTML =
-                    h + ":" + m ;
-                var t = setTimeout(startTime, 500);
-            }
-            function checkTime(i) {
-                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                return i;
-            }
-        </script>
+        <link rel="stylesheet" href = "../styles.css">
+        <script type="text/javascript" src="../jquery.maphilight.min.js"></script>
     </head>
-    <body onload="startTime()"  style="max-width:1600px">
+    <body style="max-width:1600px">
         <div class="col-xs-4" id="info">
             <div class = "textbox" id = "intro">
-                <h1 class = "title" data-text = "Welcome to my website."></h1>
-                <h4><br><br><br>Select something to begin!
+                <h1 class = "title" data-text = "Portfolio"></h1>
+                <h4>A list of stuff I've done! 
                 </h4>
             </div>
 
-            <div hidden class = "textbox" id = "book1txt">
-                <h1 class = "title" id = "book1title" data-text = "Textbooks "></h1>
-                <h4><br> +10 knowledge
-                    <br> -10 interest
-                    <br><br> Large selection of various textbooks on a variety of topics in physics, philosophy, mathematics, statistics, and computer science. "Required" for class.
+            <div class = "text" >
+                <h4><div class="vertical-menu">
+                    </br>
+                    <a href="#" class = "tab active" >//About Me</a>
+                    <a href="#" class = "tab">//Experience</a>
+                    <a href="#" class = "tab">//Projects</a>
+                    <a href="#" class = "tab">//Contact</a>
+                </div>
                 </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "book2txt">
-                <h1 class = "title" id = "book2title" data-text = "Books "></h1>
-                <h4><br> +15 entertainment
-                    <br> +5 vocabulary
-                    <br><br> Collection of various books including classics, graphic novels, non-fiction, etc. Most seem to either be from the fantasy and/or romance genre. 
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "game1txt">
-                <h1 class = "title" id = "game1title" data-text = "Video Games"></h1>
-                <h4><br> +20 entertainment
-                    <br> -15 time
-                    <br><br> Console games such as Melee, Pokemon, and Splatoon litter the shelf.  
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "game2txt">
-                <h1 class = "title" id = "game2title" data-text = "Controller"></h1>
-                <h4><br> +10 nostalgia
-                    <br> +2 endurance
-                    <br><br> A controller worn-out from the hundreds of hours playing spacies in Melee.    
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "cat2txt">
-                <h1 class = "title" id = "cat2title" data-text = "Po"></h1>
-                <h4><br> +100 fluffiness
-                    <br> +100 cuteness
-                    <br> +100 excitability    
-                    <br><br> An excitable cat. Likes to play and eat. Older brother of Yuan.    
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "cat1txt">
-                <h1 class = "title" id = "cat1title" data-text = "Yuan"></h1>
-                <h4><br> +100 fluffiness
-                    <br> +100 cuteness
-                    <br> +100 calmness    
-                    <br><br> A relaxed cat. Likes to sleep. Younger brother of Po.    
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "shuttletxt">
-                <h1 class = "title" id = "shuttletitle" data-text = "Shuttlecock"></h1>
-                <h4><br> +10 strength
-                    <br> +10 endurance    
-                    <br><br> Utilized to play badminton. Worn from multiple uses.   
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "bballtxt">
-                <h1 class = "title" id = "bballtitle" data-text = "Basketball"></h1>
-                <h4><br> +10 strength
-                    <br> +20 endurance    
-                    <br><br> "Official NBA ball" signed by Demar Derozan. Maybe this year will be the Raptors' year to win?
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "drinktxt">
-                <h1 class = "title" id = "drinktitle" data-text = "Energy Drink"></h1>
-                <h4><br> +10 awakeness
-                    <br> Passive: grogginess next morning
-                    <br><br> Increased energy to get through the night. You'll feel awful tomorrow though. 
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "laptoptxt">
-                <h1 class = "title" id = "laptoptitle" data-text = "Laptop"></h1>
-                <h4><br> +/- ? efficiency 
-                    <br><br> Used to research, <a href="https://github.com/mikeyin97" target="blank" style = "text-decoration: underline">complete side projects</a>, and finish assignments half the time. Used to browse memes, play Fortnite, watch videos, and read manga the other half. 
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "headphonestxt">
-                <h1 class = "title" id = "headphonestitle" data-text = "Headphones"></h1>
-                <h4><br> +10 happiness
-                    <br><br> 
-                </h4> Probably blasting a playlist that's an amalgram of k-pop, j-pop, c-pop, pop, rock, hip-hop and rap. 
-            </div>
-
-            <div hidden class = "textbox" id = "fridgetxt">
-                <h1 class = "title" id = "fridgetitle" data-text = "Fridge"></h1>
-                <h4><br> +10 storage
-                    <br> -10 hunger  
-                    <br><br> Contains a variety of different foodstuffs. 
-                </h4>
-            </div>
-
-            <div hidden class = "textbox" id = "metxt">
-                <h1 class = "title" id = "metitle" data-text = "Mike Yin"></h1>
-                <h4> <br><br>Hey it's me! <br><br><br>You can find my resume <a href="../developer.pdf" target="blank" style = "text-decoration: underline">here</a> 
-                    <p><br/><br/>You can find me on:
-                        <br/></p>
-                    <p><a href="https://github.com/mikeyin97" target ="_blank" style = "text-decoration: underline">Github</a>
-                    <p><a href="https://www.linkedin.com/in/michael-yin" target="_blank" style = "text-decoration: underline">LinkedIn</a></p>
-                    <p><a href="https://www.facebook.com/mikeyin123" target="_blank" style = "text-decoration: underline">Facebook</a></p>
-                </h4>
-
             </div>
         </div>
 

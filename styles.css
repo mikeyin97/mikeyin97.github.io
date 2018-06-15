@@ -41,7 +41,6 @@ body{
 }
 
 #imagecontainer{
-    border: 1px solid white;
     background-color:black;
     height:100vh;
     padding-top:4vw;
@@ -50,7 +49,6 @@ body{
 }
 
 #imagepos{
-    border: 1px solid red;
     background-color:black;
     height:95%;
     width:95%;
@@ -80,6 +78,30 @@ body{
     margin-top:10vh;
     
 }
+
+.vertical-menu a {
+    color: white;
+    display: block; 
+    padding: 8px; 
+    padding-right:10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color:white; /* Dark grey background on mouse-over */
+    color:black;
+}
+
+.aParent div {
+  float: left;
+  clear: none; 
+}
+
+.vertical-menu a.active {
+    background-color: white; 
+    color: black;
+}
+
 
 #book1:hover{
     cursor:pointer;
