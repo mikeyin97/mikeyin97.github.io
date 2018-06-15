@@ -1,0 +1,149 @@
+@font-face { font-family: ti92; src: url('../assets/slkscr.ttf'); } 
+
+
+body,h1,h2,h3,h4,h5,h6,.w3-wide {
+    font-family: ti92, sans-serif;
+    color:#f9f9f9;
+}
+
+h1{
+    font-size:5vh;
+}
+
+input:focus {
+    outline:none;
+    box-shadow:none
+}
+input, textarea, select, a { outline: none; }
+
+#clock{
+    position: absolute;
+    z-index:100;
+    top:2%;
+    font-size:200%;
+    border:10px solid black;
+    background-color: white;
+    color:red;
+    padding:10px;
+    left:15vw;
+}
+body{
+    background-color:black;
+    padding:0;
+    margin:0;
+}
+
+#info{
+    background-color:black;
+    height:100vh;
+    padding-left:4vw;
+}
+
+#imagecontainer{
+    background-color:black;
+    height:100vh;
+    padding-top:4vw;
+    text-align: center; 
+    justify-content: center;
+}
+
+.bodytext{
+    display:none;
+    text-align: right;
+}
+.visible{
+    display:inline;
+    margin-left:10px;
+    text-align: right;
+}
+
+#initial{
+    font-size:30px;
+}
+
+#textcontainer{
+    background-color:black;
+    height:100vh;
+    padding-top:5vw; 
+    justify-content: center;
+}
+
+#descTitle{
+    font-size:20px;
+}
+
+#imagepos{
+    background-color:black;
+    height:95%;
+    width:95%;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+#ImageMap1
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title{
+    margin-top:10vh;
+    
+}
+
+.vertical-menu a {
+    color: white;
+    display: block; 
+    padding: 8px; 
+    padding-right:10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color:white; /* Dark grey background on mouse-over */
+    color:black;
+}
+
+.aParent div {
+  float: left;
+  clear: none; 
+}
+
+.vertical-menu a.active {
+    background-color: white; 
+    color: black;
+}
+
+
+#book1:hover{
+    cursor:pointer;
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+@media screen and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

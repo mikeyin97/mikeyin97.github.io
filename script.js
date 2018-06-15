@@ -31,18 +31,23 @@ $(document).ready(function(){
         changeText(this.id);
     });
     $('.tab').click(function(){
-
+        
         var $this = $(this);
+        console.log($this.html().slice(0));
         if ($this.hasClass("active")== false){
             $this.parent().find('.active').removeClass('active');
             $this.addClass('active');
-            var $text = document.getElementById($this.html().slice(2));
+            var $text = document.getElementById($this.html().slice(0));
+            console.log($text);
             var element = $("body").find(".visible");
             element.removeClass("visible");
             var element = $("body").find(".show");
             element.removeClass("show");
             $text.classList.add('visible');
         }
+        
+        
+
         //need to mobilize this
 
 
