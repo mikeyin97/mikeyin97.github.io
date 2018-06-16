@@ -46,20 +46,48 @@ body{
     text-align: center; 
     justify-content: center;
 }
-
-.bodytext{
-    display:none;
-    text-align: right;
+#projectname{
+    font-size:30px;
 }
+.bodytext{
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    display:none;
+}
+
+.bodytext1{
+    text-align: left;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    display:none;
+    margin-left:50px;
+}
+
 .visible{
+    transition: opacity 1s ease-in;
+    opacity:1;
     display:inline;
     margin-left:10px;
     text-align: right;
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
 #initial{
     font-size:30px;
 }
+#projectname{
+    margin-left:50px;
+}
+
 
 #textcontainer{
     background-color:black;
@@ -68,8 +96,35 @@ body{
     justify-content: center;
 }
 
+#test{
+    height:350px;
+    top:40px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#bracket{
+    height:100%;
+    width:100%;
+}
+
 #descTitle{
     font-size:20px;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.flexbox .col {
+  flex: 1;
+}
+
+#arrow{
+    height:70%;
+    width:70%;
 }
 
 #imagepos{
@@ -125,6 +180,8 @@ body{
     background-color: white; 
     color: black;
 }
+
+
 
 
 #book1:hover{

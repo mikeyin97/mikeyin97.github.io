@@ -8,6 +8,21 @@ function typeWriter(text, n) {
     }
 }
 
+function typeWriter2(text, n, cb) {
+    if (n < (text.length)) {
+        $('#projectname').html(text.substring(0, n+1));
+        n++;
+        setTimeout(function() {
+            typeWriter2(text, n)
+        }, 40);
+    }
+}
+
+function waittype(text, n, cb){
+    typeWriter2()
+    
+}
+
 function changeText(clicked){
     $(".textbox").hide();
     $("#"+clicked+"txt").show();
@@ -22,27 +37,26 @@ function startTime() {
 }
 
 $(document).ready(function(){
-    $('#ImageMap1').maphilight();
-
+    $('#Biosensor Development').fadeIn();
     var text = $('.title').data('text');
     typeWriter(text, 0);
 
-    $( "area" ).click(function() {
-        changeText(this.id);
-    });
     $('.tab').click(function(){
-        $('#bracket').hide()
+        $('#test').fadeOut(200);
+        $("#Initial").css("display","none");
         var $this = $(this);
-        console.log($this.html().slice(0));
         if ($this.hasClass("active")== false){
+            $(".bodytext1").css("display","none");
             $this.parent().find('.active').removeClass('active');
             $this.addClass('active');
             var $text = document.getElementById($this.html().slice(0));
-            var element = $("body").find(".visible");
-            element.removeClass("visible");
-            var element = $("body").find(".show");
-            element.removeClass("show");
-            $text.classList.add('visible');
+           
+            typeWriter2($this.html(), 0);
+            console.log($this.html())
+            if ($this.html() == 'Pong/Gomoku Controller'){
+                setTimeout(function(){$(".bodytext1").css("display","block")},1000);
+            }
+            
         }
         
         
