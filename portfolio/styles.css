@@ -99,6 +99,7 @@ body{
     height:100vh;
     padding-top:5vw; 
     justify-content: center;
+    padding-right:5vw;
 }
 
 #test{
