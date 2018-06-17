@@ -10,6 +10,10 @@ h1{
     font-size:5vh;
 }
 
+h5{
+    font-size:3vh;
+}
+
 input:focus {
     outline:none;
     box-shadow:none
@@ -47,8 +51,9 @@ body{
     justify-content: center;
 }
 #projectname{
-    font-size:30px;
+    font-size:4.5vh;
 }
+
 .bodytext{
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
@@ -156,6 +161,8 @@ body{
 .title{
     margin-top:10vh;
     
+}
+.vertical-menu{
 }
 
 .vertical-menu a {
