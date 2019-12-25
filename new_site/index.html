@@ -114,6 +114,94 @@
                 coords="985,601,1019,587,1053,608,1077,603,1065,648,991,638,1003,622" shape="poly">
         </map>
     </div>
+
+    <div id = "frame2">
+        <div class="text">
+            <p class="p0" data-text = ""></p>
+            <p class="p1" data-text = ""></p>
+            <p class="p2" data-text = ""></p>
+        </div>
+        
+        <img id="img0m" class="i" src="test2mobile.gif" usemap="#Map1m"/>
+        <map id="Map1m" name="Map1m">
+            <area id="guild" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')" 
+                name="guild" alt="" title="" onclick="handlePageChange(this, '.p0', '#img0m', '#img1m')"  class="0" 
+                coords="1,619,65,645,120,666,176,687,241,706,267,731,1,730" shape="poly">
+            <area id="market" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')"
+                name="market" alt="" title=""  onclick="handlePageChange(this, '.p0', '#img0m', '#img2m')"  class="0"
+                coords="276,523,209,604,228,617,230,634,210,645,214,668,233,682,242,692,406,717,410,542" shape="poly">
+            <area id="me" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')"
+                name="me" alt="" title=""  class="0"
+                coords="255,281,246,270,244,257,250,245,259,243,271,246,276,259,278,272,272,276,276,280,282,283,293,291,296,313,293,341,297,355,241,341,256,322,250,314,241,320,233,309,226,304,240,298" shape="poly">
+            <area id="tower" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')"
+                name="tower" alt="" title=""  class="0"
+                coords="221,307,230,311,238,323,248,320,238,338,246,347,268,352,294,358,301,359,294,287,286,276,408,255,409,530,335,522,283,513,239,501,204,484,199,391,199,327" shape="poly">
+        </map>
+        <img id="img1m" class = "i hidden" src="guildmobilegif.gif" usemap="#Map2m"/>
+        <map id="Map2m" name="Map2m">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')"     
+                name="board" target="board" alt="" title="" class="1"
+                coords="19,313,86,300,90,274,92,257,90,233,95,188,111,177,130,171,154,175,161,175,192,159,200,168,187,179,187,191,188,203,172,204,169,220,166,244,164,260,177,270,184,272,248,260,254,38,23,41" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="girl" target="girl" onclick="handleTalk(this, '.p1')"
+                target="" alt="" title=""  class="1"
+                coords="84,344,91,269,91,236,96,190,109,179,133,170,144,173,159,176,190,161,197,167,184,177,185,191,181,199,170,201,162,258,175,272,181,337,117,354,104,343" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="cat1" target="cat1" target="" alt="" title="" class="1"
+                coords="185,334,170,362,174,378,186,386,215,389,246,384,272,379,279,370,253,373,220,373,197,371,187,362,215,365,235,367,249,361,263,359,274,361,291,348,290,330,277,314,250,312,222,314,202,317" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="market" target="market"
+                target="" alt="" title=""  class="1" onclick="handlePageChange(this, '.p1', '#img1m', '#img2m')"
+                coords="296,86,295,111,346,114,352,127,391,95,352,66,346,81" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="home" target="home"
+                target="" alt="" title=""  class="1" onclick="handlePageChange(this, '.p1', '#img1m', '#img0m')"
+                coords="296,171,298,199,338,201,346,220,386,188,349,155,342,170" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="desk" target="desk"
+                target="" alt="" title=""  class="1"
+                coords="31,384,174,339,169,360,172,379,194,389,234,391,269,384,282,378,295,341,344,365,295,388,290,478,13,603" shape="poly">
+                
+        </map>
+        <img id="img2m" class = "i hidden" src="oldshopmobile.gif" usemap="#Map3m"/>
+        <map id="Map3m" name="Map3m">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="book" target="book"    
+                target="" alt="" title=""  
+                coords="0,415,113,362,192,434,192,512,31,588,0,572" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="cat2" target="cat2"  
+                target="" alt="" title=""  
+                coords="310,419,326,424,320,455,306,455" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="tree" target="tree"  
+                target="" alt="" title=""  
+                coords="323,457,314,292,139,251,36,165,21,29,410,21,411,287,350,278,366,462" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="guild" target="guild" onclick="handlePageChange(this, '.p2', '#img2m', '#img1m')" 
+                target="" alt="" title=""  
+                coords="218,569,248,580,226,595,244,605,193,611,181,586,197,582" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="home" target="home" onclick="handlePageChange(this, '.p2', '#img2m', '#img0m')" 
+                target="" alt="" title=""  
+                coords="324,575,347,565,370,582,386,575,378,608,328,603,336,589" shape="poly">
+        </map>
+    </div>
     
     <script>
 
