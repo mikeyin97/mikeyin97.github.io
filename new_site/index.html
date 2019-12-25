@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="jquery.maphilight.min.js"></script>
+</head>
+
+<body onclick=handleOnClick()>
+    <audio id="myaudio" loop>
+        <source src="Mournful_Departure.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myaudio2">
+        <source src="crowd.mp3" type="audio/mp3">
+    </audio>
+    <audio id="myaudio3">
+        <source src="voice.mp3" type="audio/mp3">
+    </audio>
+    <div id = "frame">
+        <div class="text">
+            <p class="p0" data-text = ""></p>
+            <p class="p1" data-text = ""></p>
+            <p class="p2" data-text = ""></p>
+        </div>
+        
+        <img id="img0" class="i" src="maingif2.gif" usemap="#Map1"/>
+        <map id="Map1" name="Map1">
+            <area id="guild" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')" 
+                name="guild" alt="" title="" onclick="handlePageChange(this, '.p0', '#img0', '#img1')"  class="0" 
+                coords="56,670,83,649,102,631,119,619,135,601,154,579,172,566,190,575,211,584,232,594,250,606,266,612,291,624,334,637,374,651,410,666,445,677,457,681,378,685,289,685,253,691,151,685,112,688" shape="poly">
+            <area id="market" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')"
+                name="market" alt="" title=""  onclick="handlePageChange(this, '.p0', '#img0', '#img2')"  class="0"
+                coords="435,584,451,567,464,552,474,538,485,521,500,501,518,509,536,511,553,513,574,517,588,518,615,522,637,523,657,525,676,528,695,531,719,536,742,544,763,552,788,561,816,566,840,571,855,574,865,579,729,684,588,690,544,685,515,684,493,677,465,673,461,660,441,652,437,630,453,618,454,597,428,591" shape="poly">
+            <area id="me" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')"
+                name="me" alt="" title=""  class="0"
+                coords="721,248,713,240,709,230,712,220,719,212,731,211,740,214,742,225,743,234,738,243,737,248,750,252,755,258,758,267,760,276,760,284,759,294,761,302,759,311,761,320,747,317,736,313,724,311,712,307,707,304,717,298,719,288,714,281,709,286,704,279,698,276,692,267,703,267,712,262,717,255" shape="poly">
+            <area id="tower" data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p0')" onmouseover="handleHover(this, '.p0')"
+                name="tower" alt="" title=""  class="0"
+                coords="907,661,905,584,902,493,857,487,819,484,791,484,735,467,693,454,671,443,666,300,685,275,704,287,715,288,708,299,706,307,761,324,761,267,752,251,752,242,887,226,898,74,1110,89,1119,663" shape="poly">
+        </map>
+        <img id="img1" class = "i hidden" src="guildgif2.gif" usemap="#Map2"/>
+        <map id="Map2" name="Map2">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')"     
+                name="board" target="board" alt="" title="" class="1"
+                coords="110,310,371,245,373,214,368,189,372,167,376,155,388,143,404,138,419,138,430,143,437,142,440,136,442,23,421,14,387,14,351,25,310,26,196,20,140,25,106,25,85,43,73,68,71,98,77,131,85,145,89,160,85,189,80,216,79,240,79,257,83,285,87,295" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="girl" target="girl" onclick="handleTalk(this, '.p1')"
+                target="" alt="" title=""  class="1"
+                coords="372,239,373,224,371,211,369,195,369,182,370,168,380,150,387,145,401,138,415,138,424,142,432,146,441,140,453,133,463,129,471,129,473,136,465,142,455,150,459,156,459,165,451,164,447,171,448,182,448,193,444,204,441,214,438,223,444,229,448,236,450,247,453,258,455,270,457,282,455,297,397,317,386,306,376,298,368,314,366,293,368,277,369,261,370,249" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="cat1" target="cat1" target="" alt="" title="" class="1"
+                coords="213,424,221,423,230,421,236,425,242,422,250,417,257,406,257,390,248,382,233,377,219,377,207,377,192,377,181,380,172,384,163,389,152,398,144,409,141,420,142,432,146,443,158,448,171,451,188,453,204,448,216,446,228,444,238,440,244,435,233,432,225,435,213,435,198,436,185,437,171,434,163,426,157,429,169,429,179,431,191,431,201,429,171,434" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="market" target="market"
+                target="" alt="" title=""  class="1" onclick="handlePageChange(this, '.p1', '#img1', '#img2')"
+                coords="608,74,605,105,652,108,659,122,698,88,658,56,649,74" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="home" target="home"
+                target="" alt="" title=""  class="1" onclick="handlePageChange(this, '.p1', '#img1', '#img0')"
+                coords="604,167,605,195,647,196,655,213,693,179,659,146,649,162,624,164" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p1')" onmouseover="handleHover(this, '.p1')" 
+                name="desk" target="desk"
+                target="" alt="" title=""  class="1"
+                coords="79,431,143,405,136,436,146,455,160,455,184,460,212,453,238,448,247,441,261,405,248,372,376,331,555,264,673,301,630,324,625,360,622,411,380,531,277,576,142,631,128,638" shape="poly">
+                
+        </map>
+        <img id="img2" class = "i hidden" src="shopsgif2.gif" usemap="#Map3"/>
+        <map id="Map3" name="Map3">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="book" target="book"    
+                target="" alt="" title=""  
+                coords="541,417,540,444,538,526,605,560,760,490,762,415,686,351" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="fruit" target="fruit"    
+                target="" alt="" title=""  
+                coords="1075,333,996,396,1001,415,1009,419,1016,420,1016,499,1165,540,1190,519,1192,491,1190,468,1188,447,1187,425,1186,403,1192,390,1198,377,1210,364,1216,359,1152,345" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="cat2" target="cat2"  
+                target="" alt="" title=""  
+                coords="872,412,870,418,869,425,868,432,858,436,884,440,881,424,882,417,890,408,882,403,872,402" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="tree" target="tree"  
+                target="" alt="" title=""  
+                coords="888,431,883,280,718,249,658,180,596,39,1153,27,1110,196,1016,265,929,277,916,267,927,444,904,443" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="guild" target="guild" onclick="handlePageChange(this, '.p2', '#img2', '#img1')" 
+                target="" alt="" title=""  
+                coords="743,592,783,604,758,629,775,639,707,656,684,612,708,618" shape="poly">
+            <area data-maphilight='{"strokeColor":"ffffff","strokeWidth":3,"fillColor":"e0e1e2","fillOpacity":0.6}' 
+                onmouseout="revert(this, '.p2')" onmouseover="handleHover(this, '.p2')" 
+                name="home" target="home" onclick="handlePageChange(this, '.p2', '#img2', '#img0')" 
+                target="" alt="" title=""  
+                coords="985,601,1019,587,1053,608,1077,603,1065,648,991,638,1003,622" shape="poly">
+        </map>
+    </div>
+    
+    <script>
+
+        var audio = document.getElementById('myaudio');
+        var audio2 = document.getElementById('myaudio2');
+        var audio3 = document.getElementById('myaudio3');
+        audio.volume = 0.2;
+        audio2.volume = 0.2;
+        audio3.volume = 1;
+
+        var text = {
+            '.p0': "<h3><u>Welcome to my website.</u><h3> <p>Right now it's fantasy-flaired, inspired by the various series I've been reading recently. </br></br> You can hover over some of the stuff on this page to begin! (Also you can click anywhere to start playing music)</p>",
+            '.p1': "<h3><u>Adventurer's Guild.</u><h3> <p>You can look up previous jobs and interact with the items here. </p>",
+            '.p2': "<h3><u>Town Market.</u><h3> <p>You can look at wares and interact with the items here. </p>",
+            'guild': "<h3><u>Adventurer's Guild</u><h3> <p>Look up jobs, stats, etc. </br></br> -> Click to go</p>",
+            'market': "<h3><u>Town Market</u><h3> <p>Look at various wares being sold. </br></br> -> Click to go</p>",
+            'home': "<h3><u>Main Screen</u><h3> <p>Return to the home screen. </br></br> -> Click to go</p>", 
+            'me' : "<h3><u>Me</u><h3> <p>I like reading, coding, keeping fit, playing video and board games, and trying new foods!</p>",
+            'tower': "<h3><u>Castle</u><h3> <p>Reimagining my condo as a castle tower.</p>",
+            'board': "<h3><u>Job Board</u><h3> <p>Recent Jobs: </br></br> Researcher - UofT </br> Software Engineering Intern - Shopify </br> Software Engineering Intern - Stanza </br> Researcher - dgp</p> ",
+            "cat1": "<h3><u>Po</u><h3> <p>My cute and fluffy white cat</p>",
+            "girl": "<h3><u>Receptionist</u><h3> <p>... (The receptionist is looking at you) </br></br> -> Click to talk</p>",
+            "cat2": "<h3><u>Yuan</u><h3> <p>My cute and fluffy black cat</p>",
+            "book": "<h3><u>Bookstore</u><h3> <p>A bookstore stocked with textbooks and novels.</p>",
+            "fruit": "<h3><u>Fruit Cart</u><h3> <p>A cart selling freshly picked fruit.</p>",
+            "man": "<h3><u>Customer</u><h3> <p>He is searching intently for a specific book...</p>",
+            "tree": "<h3><u>Cherry Blossom</u><h3> <p>The tree is in full bloom.</p>",
+            "desk": "<h3><u>Desk</u><h3> <p>A sturdy desk made of find mahogany.</p>",
+        }
+
+        var talk = {
+            "girl": "<h3><u>Receptionist</u><h3> <p>'Good morning, what can I do for you today?' </p>",
+        }
+
+        $('.p0').html(text['.p0']);
+        $('.p1').html(text['.p1']);
+        $('.p2').html(text['.p2']);
+        $('.p0').fadeIn(500);
+        
+        function handlePageChange(elem, toHide, from, to) {
+            if (elem.getAttribute("name") === "market") {
+                console.log("HI")
+                $(from).fadeOut(500, function(){
+                    $(from).addClass('hidden');
+                    $(to).removeClass('hidden');
+                    $(from).css('display', 'none');
+                    $(to).css('display', '');
+                    $('.p2').fadeIn(500);
+                });
+                $(toHide).fadeOut(500);
+            } else if (elem.getAttribute("name") === "guild") {
+                $(from).fadeOut(500, function(){
+                    $(from).addClass('hidden');
+                    $(to).removeClass('hidden');
+                    $(from).css('display', 'none');
+                    $(to).css('display', '');
+                    $('.p1').fadeIn(500);
+                });
+                $(toHide).fadeOut(500);
+            } else if (elem.getAttribute("name") === "home") {
+                $(from).fadeOut(500, function(){
+                    $(from).addClass('hidden');
+                    $(to).removeClass('hidden');
+                    $(from).css('display', 'none');
+                    $(to).css('display', '');
+                    $('.p0').fadeIn(500);
+                    document.getElementById('myaudio2').play();
+                });
+                $(toHide).fadeOut(500);
+            }
+        } 
+
+        function handleTalk(elem, p) {
+            document.getElementById('myaudio3').play();
+            $(p).html(talk[elem.getAttribute("name")]);
+        }
+
+        function handleHover(elem, p) {
+            $(p).html(text[elem.getAttribute("name")]);
+        } 
+
+        function revert(elem, p){
+            $(p).html(text[p]);
+        }
+
+        function handleOnClick() {
+            document.getElementById('myaudio').play();
+
+        }    
+    </script>
+</body>
+</html>

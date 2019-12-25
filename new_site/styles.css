@@ -1,0 +1,73 @@
+html{
+    overflow: hidden;
+}
+body{
+    background-image: url('background.jpg');
+    background-repeat: repeat;
+    background-position: 4vw 0vh;
+    background-size: 80vw 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+#frame{
+    margin-top: 2vh;
+    height: 700px;
+    width: 1244px;
+    position: relative;
+}
+
+area:hover{
+    cursor:pointer;
+}
+
+p{
+    z-index: 100;
+    font-size: 20px;
+    font-family: 'Satisfy', cursive;
+}
+
+h3{
+    margin: 10px;
+}
+
+.p1{
+    position: absolute;
+    display:none;
+    left: 800px;
+    top: 10%;
+    width: 20%;
+}
+
+.p0{
+    display:none;
+    position:absolute;
+    top:3%;
+    left:10%;
+    width: 30%;
+}
+
+.hidden{
+    display:none !important;
+}
+
+.p2{
+    display:none;
+    position:absolute;
+    top:20%;
+    left:10%;
+    width: 20%;
+}
+
+
+.i{
+    -webkit-animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
