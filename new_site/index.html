@@ -212,28 +212,36 @@
         audio2.volume = 0.2;
         audio3.volume = 1;
 
+        
         var text = {
-            '.p0': "<h3><u>Welcome to my website.</u><h3> <p>Right now it's fantasy-flaired, inspired by the various series I've been reading recently. </br></br> You can hover over some of the stuff on this page to begin! (Also you can click anywhere to start playing music)</p>",
+            '.p0': "<h3><u>Welcome to my website.</u><h3> <p>Right now it's fantasy-flaired, inspired by the various series "
+            + "I've been reading recently. </br></br> You can hover/click over some of the stuff on this page to begin! " 
+            + "(Also you can click anywhere to start playing music)</p>" 
+            + "<p><a href='https://github.com/mikeyin97' target ='_blank' style = 'text-decoration: underline'>Github</a>" 
+            + "<span>&nbsp&nbsp&nbsp</span>" 
+            + "<a href='https://www.linkedin.com/in/michael-yin' target='_blank' style = 'text-decoration: underline'>LinkedIn</a>"
+            + "<span>&nbsp&nbsp&nbsp</span>"
+            + "<a href='resume.pdf' target='blank' style = 'text-decoration: underline'>Resume</a></p>",
             '.p1': "<h3><u>Adventurer's Guild.</u><h3> <p>You can look up previous jobs and interact with the items here. </p>",
             '.p2': "<h3><u>Town Market.</u><h3> <p>You can look at wares and interact with the items here. </p>",
             'guild': "<h3><u>Adventurer's Guild</u><h3> <p>Look up jobs, stats, etc. </br></br> -> Click to go</p>",
             'market': "<h3><u>Town Market</u><h3> <p>Look at various wares being sold. </br></br> -> Click to go</p>",
             'home': "<h3><u>Main Screen</u><h3> <p>Return to the home screen. </br></br> -> Click to go</p>", 
-            'me' : "<h3><u>Me</u><h3> <p>I like reading, coding, keeping fit, playing video and board games, and trying new foods!</p>",
-            'tower': "<h3><u>Castle</u><h3> <p>Reimagining my condo as a castle tower.</p>",
-            'board': "<h3><u>Job Board</u><h3> <p>Recent Jobs: </br></br> Researcher - UofT </br> Software Engineering Intern - Shopify </br> Software Engineering Intern - Stanza </br> Researcher - dgp</p> ",
+            'me' : "<h3><u>Me</u><h3> <p>I like reading, coding, anime and manga, keeping fit, playing video and board games, and trying new foods!</p>",
+            'tower': "<h3><u>Castle</u><h3> <p>Reimagining my condo as a tower in a castle.</p>",
+            'board': "<h3><u>Job Board</u><h3> <p>Recent Jobs: </br></br> Researcher - UofT </br> SWE Intern - Shopify </br> SWE Intern - Stanza </br> Researcher - dgp</p> ",
             "cat1": "<h3><u>Po</u><h3> <p>My cute and fluffy white cat</p>",
             "girl": "<h3><u>Receptionist</u><h3> <p>... (The receptionist is looking at you) </br></br> -> Click to talk</p>",
             "cat2": "<h3><u>Yuan</u><h3> <p>My cute and fluffy black cat</p>",
             "book": "<h3><u>Bookstore</u><h3> <p>A bookstore stocked with textbooks and novels.</p>",
-            "fruit": "<h3><u>Fruit Cart</u><h3> <p>A cart selling freshly picked fruit.</p>",
+            "fruit": "<h3><u>Fruit Cart</u><h3> <p>A cart selling freshly picked fruit and veggies.</p>",
             "man": "<h3><u>Customer</u><h3> <p>He is searching intently for a specific book...</p>",
-            "tree": "<h3><u>Cherry Blossom</u><h3> <p>The tree is in full bloom.</p>",
+            "tree": "<h3><u>Cherry Blossom</u><h3> <p>Cherry blossom flowers are in full bloom.</p>",
             "desk": "<h3><u>Desk</u><h3> <p>A sturdy desk made of find mahogany.</p>",
         }
 
         var talk = {
-            "girl": "<h3><u>Receptionist</u><h3> <p>'Good morning, what can I do for you today?' </p>",
+            "girl": "<h3><u>Receptionist</u><h3> <p>'Good day, what can I do for you today?' </p>",
         }
 
         $('.p0').html(text['.p0']);
