@@ -1,3 +1,7 @@
+html{
+  background-color: #FFF8E0;
+}
+
 h1{
   font-size: 40px;
   font-family: 'Mansalva', cursive;
@@ -113,4 +117,47 @@ p{
 .container{
   clear:both;
   padding-top: 40px;
+}
+
+@media only screen and (max-width: 1200px){
+  #content{
+    width: 90%; 
+  }
+}
+
+@media only screen and (max-width: 800px){
+  #topleft{
+    width: 100%;
+    margin:0 auto;
+  }
+
+  #topright{
+    width: 100%;
+    margin: 0px;
+  }
+
+  #topright1{
+    width: 100%;
+    margin: 0px;
+  }
+
+  .container{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #content{
+    padding-top: 0px;
+    width: 90%; 
+  }
+
+  .projicon{
+    display: none;
+    margin: 0px;
+  }
+
+  .projicon1{
+    display: none;
+    margin: 0px;
+  }
 }
