@@ -20,7 +20,7 @@ h3{
 }
 
 h4{
-  font-size: 25px;
+  font-size: 18px;
   text-emphasis: bold;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: -5px;
@@ -80,15 +80,23 @@ p{
 .projicon{
   margin-left: 40px;
   border-radius:0%;
-  height: 180px;
-  width: 180px
+  height: 160px;
+  width: 160px
 }
 
 .projicon1{
+  margin-left: 50px;
+  border-radius:0%;
+  height: 120px;
+  width: 110px
+}
+
+.projicon2{
+  margin-top: -20px;
   margin-left: 40px;
   border-radius:0%;
   height: 160px;
-  width: 150px
+  width: 160px
 }
 
 
@@ -157,6 +165,11 @@ p{
   }
 
   .projicon1{
+    display: none;
+    margin: 0px;
+  }
+
+  .projicon2{
     display: none;
     margin: 0px;
   }
