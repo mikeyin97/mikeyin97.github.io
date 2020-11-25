@@ -72,9 +72,9 @@ p{
 }
 
 .subcontent{
-  padding-top:50px;
+  padding-top:10px;
   clear:both;
-  height: 100px;
+  height: 80px;
 }
 
 .projicon{
@@ -119,7 +119,7 @@ p{
 
 #footer{
   clear:both;
-  height:100px;
+  height:50px;
 }
 
 .container{
