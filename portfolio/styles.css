@@ -10,6 +10,10 @@ h1{
     font-size:5vh;
 }
 
+h5{
+    font-size:3vh;
+}
+
 input:focus {
     outline:none;
     box-shadow:none
@@ -46,30 +50,87 @@ body{
     text-align: center; 
     justify-content: center;
 }
+#projectname{
+    font-size:4.5vh;
+}
 
 .bodytext{
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
     display:none;
-    text-align: right;
 }
+
+.bodytext1{
+    text-align: left;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    display:none;
+    margin-left:50px;
+}
+
 .visible{
+    transition: opacity 1s ease-in;
+    opacity:1;
     display:inline;
     margin-left:10px;
     text-align: right;
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
 #initial{
     font-size:30px;
 }
+#projectname{
+    margin-left:50px;
+}
+
 
 #textcontainer{
     background-color:black;
     height:100vh;
     padding-top:5vw; 
     justify-content: center;
+    padding-right:5vw;
+}
+
+#test{
+    height:350px;
+    top:40px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#bracket{
+    height:100%;
+    width:100%;
 }
 
 #descTitle{
     font-size:20px;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.flexbox .col {
+  flex: 1;
+}
+
+#arrow{
+    height:70%;
+    width:70%;
 }
 
 #imagepos{
@@ -102,6 +163,8 @@ body{
     margin-top:10vh;
     
 }
+.vertical-menu{
+}
 
 .vertical-menu a {
     color: #c4ff9e;
@@ -125,6 +188,8 @@ body{
     background-color: white; 
     color: black;
 }
+
+
 
 
 #book1:hover{
