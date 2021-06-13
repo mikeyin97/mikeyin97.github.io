@@ -2,12 +2,25 @@
 
 <html lang="en">
 <head>
+  <script>
+    function setStyleSheet(){
+      var stylesheet = document.getElementById("stylesheet");
+      console.log(stylesheet.href);
+      if (stylesheet.href.includes("styles.css")){
+        stylesheet.setAttribute("href", "styles2.css");
+      }
+      else if (stylesheet.href.includes("styles2.css")){
+        stylesheet.setAttribute("href", "styles.css");
+      }
+      
+    }
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Michael Yin</title>
   
   <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" id = "stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
@@ -20,10 +33,25 @@
 
 
   <div id="content">
+
+    <div id = "toggle">
+      <p id = "p1">Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox" onclick="setStyleSheet()">
+        <span class="slider round"></span>
+      </label>
+
+    </div>
+   
+
+
     <div id="topleft">
       <img src="imgs/profile.png" id="Avatar">
     </div>
     <div id="topright">
+      <!-- <a onclick = "setStyleSheet('styles2.css')" href='#'> test</a> -->
+
+
       <h1>Hello, I'm Ji Tong (Michael)!</h1>
       <h2>I'm a Master's student at UBC.</h2>
       <p> My research interests are in human-computer interaction (HCI), with a focus on virtual and augmented reality systems. In particular, 
@@ -108,6 +136,38 @@
           <div id="topright1">
             <a href="https://www.amazon.com/mile-Restaurant-Recommender/dp/B07MDVZ3Y6" target="_blank"><h4>Restaurant Recommender</h4></a>
             <p> "Hey Alexa. Recommend me a good sushi restaurant in Vancouver." </p>
+          </div>
+        </div>
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/bball.png" class="projicon2">
+          </div>
+          <div id="topright1">
+            <a href="https://github.com/mikeyin97/ncaa_nba_stats" target="_blank"><h4>NBA/NCAA Data Analysis</h4></a>
+            <p> Do good shooters in the NCAA continue to be good shooters in the NBA? A quick analysis. </p>
+          </div>
+        </div>
+        
+
+    </div>
+    <div class="subcontent">
+      <h3>Sample Class Projects</h3>
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/keep.png" class="projicon1">
+          </div>
+          <div id="topright1">
+            <a href="https://www.figma.com/file/HhQ6ngVHkdpj4H1qlW7iTJ/CSC318-Hi-Fi-Final" target="_blank"><h4>Keep - Smart Grocery App</h4></a>
+            <p> Mockup of smart shopping application to quickly scan receipts and track groceries. </p>
+          </div>
+        </div>
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/boble.png" class="projicon2">
+          </div>
+          <div id="topright1">
+            <a href="https://www.figma.com/file/stkoDuZf5b27SkuaI8dLaY/Events?node-id=0%3A1" target="_blank"><h4> Boble</h4></a>
+            <p> Mockup of an online event-finding application for university students. </p>
           </div>
         </div>
         

@@ -1,0 +1,171 @@
+html, body{
+  margin:0;
+  padding:0;
+  border: none;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #172941;
+  background-image: url("image/background1.png");
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+
+}
+
+#background{
+  position: relative;
+  margin-top: 0;
+  bottom:0;
+  height: 1000vh;
+  width: 100vw;
+  background-image: url("image/background2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -webkit-animation: fadein 4s; 
+  -o-animation: fadein 4s; 
+  z-index: -1;
+}
+
+/* #map{
+  text-align: center;
+  position: relative;
+  top: -100vh;
+  bottom:0;
+  width:55vw;
+  height: 80vh;
+  -webkit-clip-path: polygon(86% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(86% 0, 100% 100%, 0 100%, 0 0);
+} */
+
+
+
+@keyframes fadein {
+  0% { opacity:0; }
+  33% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadein { /* Firefox */
+  0% { opacity:0; }
+  33% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  0% { opacity:0; }
+  33% { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes fadein { /* Opera */
+  0% { opacity:0; }
+  33% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@keyframes fadein2 {
+  0% { opacity:0; }
+  33% { opacity:0; }
+  66% { opacity:1; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadein2 { /* Firefox */
+  0% { opacity:0; }
+  33% { opacity:0; }
+  66% { opacity:1; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadein2 { /* Safari and Chrome */
+  0% { opacity:0; }
+  33% { opacity:0; }
+  66% { opacity:1; }
+  100% { opacity:1; }
+}
+@-o-keyframes fadein2 { /* Opera */
+  0% { opacity:0; }
+  33% { opacity:0; }
+  66% { opacity:1; }
+  100% { opacity:1; }
+}
+
+#title{
+  top: 500px;
+  float:right;
+  background-image: url("image/text.png");
+  position: relative;
+  width: 1000px;
+  height: 300px;
+
+  animation: fadein2 8s;
+  background-repeat: no-repeat;
+}
+
+
+#subtitle{
+  text-align: right;
+  top: 350px;
+  float:right;
+  position: relative;
+  width: 1100px;
+  height: 300px;
+  right: 100px;
+}
+
+#content1{
+  top: 400px;
+  float:left;
+  text-align: left;
+  margin-left: 10%;
+  position: relative;
+  width: 80%;
+  animation: fadein2 12s;
+  animation-delay: 0s;
+}
+
+p{
+  font-size: 15px;
+  font-family: 'Do Hyeon', sans-serif;
+  color: white;
+}
+
+pre{
+  font-size: 15px;
+  font-family: 'Do Hyeon', sans-serif;
+  color: white;
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'East Sea Dokdo', sans-serif;
+  color:white;
+  animation: fadein2 12s;
+  animation-delay: 0s;
+}
+
+h2{
+  font-size: 40px;
+  font-family: 'East Sea Dokdo', sans-serif;
+  color: white;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#toggle {
+  position:fixed;
+  left: 30px;
+}
