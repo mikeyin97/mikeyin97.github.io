@@ -52,12 +52,21 @@ p{
 }
 
 a:link {
-  color: #a9c0ff;
+  color: #a9c0ff !important;
 }
 
 /* visited link */
 a:visited {
-  color: #f8c1ff;
+  color: #f8c1ff !important;
+}
+
+a:link h4{
+  color: #a9c0ff !important;
+}
+
+/* visited link */
+a:visited h4{
+  color: #f8c1ff !important;
 }
 
 #topright{
