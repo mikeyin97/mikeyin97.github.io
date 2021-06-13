@@ -186,6 +186,10 @@ a:visited {
     display: none;
     margin: 0px;
   }
+
+  #toggle {
+    display: none;
+  }
 }
 
 /* The switch - the box around the slider */
