@@ -15,6 +15,21 @@
       
     }
   </script>
+  <script>
+    function openDiv(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Michael Yin</title>
@@ -23,6 +38,7 @@
   <link rel="stylesheet" href="styles.css" id = "stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="favicon.ico" />
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
@@ -34,39 +50,82 @@
 
   <div id="content">
 
-    <div id = "toggle">
+    <!-- <div id = "toggle">
       <p id = "p1">Dark Mode</p>
       <label class="switch">
         <input type="checkbox" onclick="setStyleSheet()">
         <span class="slider round"></span>
       </label>
 
-    </div>
+    </div> -->
    
 
 
     <div id="topleft">
-      <img src="imgs/profile.png" id="Avatar">
+      <img src="imgs/profile.jpg" id="Avatar">
+      <div id = "icons">
+        <a href="https://github.com/mikeyin97" target="_blank"><i class='fa fa-github' style='font-size:36px'></i></a>
+      <a href="https://www.instagram.com/yinsecurity/" target="_blank"><i class='fa fa-instagram' style='font-size:36px'></i></a>
+      <a href="https://www.linkedin.com/in/michael-yin/" target="_blank"><i class='fa fa-linkedin' style='font-size:36px'></i></a>
+      </div>
+      
     </div>
     <div id="topright">
       <!-- <a onclick = "setStyleSheet('styles2.css')" href='#'> test</a> -->
 
 
-      <h1>Hello, I'm Ji Tong (Michael)!</h1>
+      <h1>Hello, I'm Ji Tong (Michael) Yin!</h1>
       <h2>I'm a Master's student at UBC.</h2>
-      <p> My research interests are in human-computer interaction (HCI), with a focus on virtual and augmented reality systems. In particular, 
-      I am interested in understanding how humans interact with virtual experiences, and the ways in which this can be improved. I am currently under the supervision of
-      Professor Robert Xiao. Previously, I did my undergrad at UofT, where I studied engineering science. </p>
-      <p> In my free time, I enjoy cooking, playing the piano, reading, and gaming. </p>
+      <p> My research interests are in human-computer interaction (HCI), with a focus on virtual experiences. In particular, I am interested
+      in understanding how humans engage with forms of virtual entertainment (e.g. video games, livestreaming, VR/AR) and developing tools to support
+      and extend these interactions. I am currently supervised by Professor Robert Xiao. Previously, I did my undergrad at UofT, where I studied engineering science. </p>
+      <p> In my free time, I enjoy cooking, playing the piano, reading, and playing video games. </p>
       <p><a href="files/cv.pdf" target="_blank">Curriculum Vitae</a></p>
       <p><b>Contact:</b> <a href="mailto:jiyin@cs.ubc.ca">jiyin@cs.ubc.ca</a></p>
-      <a href="https://github.com/mikeyin97" target="_blank"><i class='fab fa-github' style='font-size:36px'></i></a>
-      <a href="https://www.instagram.com/yinsecurity/" target="_blank"><i class='fab fa-instagram' style='font-size:36px'></i></a>
-      <a href="https://www.linkedin.com/in/michael-yin/" target="_blank"><i class='fab fa-linkedin' style='font-size:36px'></i></a>
+      
     </div>
     
     <div class="subcontent">
-      <h3>Research</h3>
+      <div class = "tab">
+        <button class="tablinks active" onclick="openDiv(event, 'Publications')"><h3>Publications</h3></button>
+        <button class="tablinks" onclick="openDiv(event, 'Research')"><h3>Other Research</h3></button>
+        <button class="tablinks" onclick="openDiv(event, 'Projects')"><h3>Personal/School Projects</h3></button>
+      </div>
+    </div>
+
+    <div id = "Publications" class = "tabcontent" style="display:block">
+      <div class="container">
+        <div id="topleft1">
+          <img src="imgs/choices.png" class="projicon1">
+        </div>
+        <div id="topright1">
+          <h4>How Should I Respond to “Good Morning?”: Understanding Choice in Narrative-Rich Games</h4>
+          <p style="margin-bottom:0;"><b>Michael Yin</b>, Robert Xiao</b></p>
+          <p style="margin : 0; padding-top:10px;">DIS 2022 (conditionally accepted)</p>
+          <p>  &nbsp
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="topleft1">
+          <img src="imgs/luck.png" class="projicon1">
+        </div>
+        <div id="topright1">
+          <h4>The Reward for Luck: Understanding the Effect of Random Reward Mechanisms in Video Games on Player Experience</h4>
+
+          <p style="margin-bottom:0;"><b>Michael Yin</b>, Robert Xiao</b></p>
+          <p style="margin : 0; padding-top:10px;">CHI 2022 </p>
+          <p>  &nbsp
+          </p>
+        </div>
+      </div>
+
+      
+
+  </div>  
+
+    <div id = "Research" class = "tabcontent">
         <div class="container">
           <div id="topleft1">
             <img src="imgs/curling.png" class="projicon1">
@@ -108,8 +167,9 @@
             </p>
           </div>
         </div>
-    <div class="subcontent">
-      <h3>Sample Personal Projects</h3>
+    </div>  
+      
+    <div id = "Projects" class = "tabcontent">
         <div class="container">
           <div id="topleft1">
             <img src="imgs/boba.png" class="projicon1">
@@ -147,11 +207,6 @@
             <p> Do good shooters in the NCAA continue to be good shooters in the NBA? A quick analysis. </p>
           </div>
         </div>
-        
-
-    </div>
-    <div class="subcontent">
-      <h3>Sample Class Projects</h3>
         <div class="container">
           <div id="topleft1">
             <img src="imgs/keep.png" class="projicon1">
@@ -170,9 +225,10 @@
             <p> Mockup of an online event-finding application for university students. </p>
           </div>
         </div>
-        
-
     </div>
+   
+        
+        
   </div>
   <div id = "footer"></div>
 

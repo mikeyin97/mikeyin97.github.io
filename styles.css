@@ -14,9 +14,8 @@ h2{
 }
 
 h3{
-  font-size: 30px;
-  font-family: 'Mansalva', cursive;
-  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h4{
@@ -32,9 +31,9 @@ p{
 }
 
 #Avatar {
-  margin-top:70px;
+  margin-top:50px;
   border-radius: 50%;
-  height:220px;
+  height:150px;
   margin-left: auto;  /* Magic! */
   margin-right:auto;
   max-width: 100%;
@@ -43,18 +42,26 @@ p{
 
 #topleft{
   float:left;
-  width:30%;
+  width:20%;
 
 }
 
 #topright{
   float:left;
-  width:70%;
+  width:80%;
 
+}
+#icons{
+  margin-top: 20px;
+  float:left;
+  width:100%;
+}
+.fa{
+  margin-right: 20px;
 }
 
 #content{
-  padding-top: 100px;
+  padding-top: 70px;
   width: 60%; 
   margin:0 auto;
 }
@@ -87,22 +94,22 @@ p{
 .projicon1{
   margin-left: 50px;
   border-radius:0%;
-  height: 120px;
-  width: 110px
+  height: 90px;
+  width: 80px
 }
 
 .projicon2{
   margin-top: -20px;
   margin-left: 40px;
   border-radius:0%;
-  height: 160px;
-  width: 160px
+  height: 110px;
+  width: 110px
 }
 
 
 #topleft1{
   float:left;
-  width:30%;
+  width:19%;
   margin:0;
   padding:0;
 
@@ -110,9 +117,18 @@ p{
 
 #topright1{
   float:left;
-  width:60%;
+  width:70%;
   margin-left: 50px;
   margin-top:-30px;
+  padding:0;
+
+}
+
+#topall1{
+  float:left;
+  width:90%;
+  margin-left: 50px;
+  margin-top:-40px;
   padding:0;
 
 }
@@ -126,6 +142,48 @@ p{
   clear:both;
   padding-top: 40px;
 }
+
+.containerall{
+  clear:both;
+  padding-top: 20px;
+}
+
+.tab {
+  margin-top:40px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2px 30px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-top: 20px;
+}
+
 
 @media only screen and (max-width: 1200px){
   #content{
@@ -150,6 +208,7 @@ p{
   }
 
   .container{
+    top:10px;
     margin: 0px;
     padding: 0px;
   }
