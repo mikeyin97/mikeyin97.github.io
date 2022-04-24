@@ -41,14 +41,15 @@ p{
 }
 
 #topleft{
+  margin-left: 10px;
   float:left;
-  width:20%;
+  width:18%;
 
 }
 
 #topright{
-  float:left;
-  width:80%;
+  float:right;
+  width:78%;
 
 }
 #icons{
