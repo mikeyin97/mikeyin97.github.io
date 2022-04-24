@@ -151,15 +151,17 @@ p{
 .tab {
   margin-top:40px;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border-bottom: 2px solid black;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   float: left;
-  border: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
   outline: none;
   cursor: pointer;
   padding: 2px 30px;
@@ -211,6 +213,13 @@ p{
     top:10px;
     margin: 0px;
     padding: 0px;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-top: 80px;
   }
 
   #content{
