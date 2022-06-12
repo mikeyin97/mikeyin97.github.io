@@ -75,6 +75,10 @@ p{
   margin-right: 10px;
 }
 
+.conf{
+  color:#84369c;
+}
+
 .fab:hover{
   color:orangered !important;
 }
