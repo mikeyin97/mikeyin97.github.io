@@ -78,6 +78,11 @@ p{
 .conf{
   color:#84369c;
 }
+.info{
+  color:#d11f87;
+  font-weight: bold;
+  /* font-style: italic; */
+}
 
 .fab:hover{
   color:orangered !important;
