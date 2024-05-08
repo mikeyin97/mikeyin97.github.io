@@ -30,6 +30,11 @@ p{
   font-family: 'Open Sans', sans-serif;
 }
 
+.bolder{
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 #Avatar {
   margin-top:50px;
   border-radius: 50%;
