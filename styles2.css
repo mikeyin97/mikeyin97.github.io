@@ -103,8 +103,8 @@ a:visited h4{
 .projicon{
   margin-left: 40px;
   border-radius:0%;
-  height: 160px;
-  width: 160px
+  height: 100px;
+  width: 100px
 }
 
 .projicon1{
@@ -138,6 +138,10 @@ a:visited h4{
   margin-top:-30px;
   padding:0;
 
+}
+
+#topright1 a, #topright1 p {
+  margin: 0; /* Removes default margins */
 }
 
 #footer{

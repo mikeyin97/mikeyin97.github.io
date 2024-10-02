@@ -109,8 +109,8 @@ p{
 .projicon1{
   margin-left: 50px;
   border-radius:10%;
-  height: 100px;
-  width: 100px
+  height: 80px;
+  width: 80px
 }
 
 .projicon2{
@@ -124,7 +124,7 @@ p{
 
 #topleft1{
   float:left;
-  width:19%;
+  width:10%;
   margin:0;
   padding:0;
   border-radius: 10;
@@ -133,12 +133,21 @@ p{
 
 #topright1{
   float:left;
-  width:70%;
+  width:85%;
   margin-left: 50px;
   margin-top:-30px;
   padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  height: 100%; /* Ensure the div has height */
+
 
 }
+
+
+
+
 
 #topall1{
   float:left;
@@ -156,8 +165,14 @@ p{
 
 .container{
   clear:both;
-  padding-top: 40px;
+  padding-top: 10px;
 }
+
+.container3{
+  clear:both;
+  padding-top: 30px;
+}
+
 
 .containerall{
   clear:both;
@@ -203,13 +218,23 @@ p{
 }
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1400px){
   #content{
     width: 90%; 
   }
+
+  #topleft1{
+    width: 10%;
+  
+  }
+
+  #topright1{
+    width:80%;
+  }
+  
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1200px){
   #topleft{
     width: 100%;
     margin:0 auto;
@@ -223,6 +248,7 @@ p{
   #topright1{
     width: 100%;
     margin: 0px;
+    padding: 0px;
   }
 
   .container{
@@ -231,11 +257,19 @@ p{
     padding: 0px;
   }
 
+  .extraspace{
+    display:none;
+  }
+
+  .container3{
+    padding: 0px;
+  }
+
   /* Style the tab content */
   .tabcontent {
   display: none;
   padding: 6px 12px;
-  margin-top: 80px;
+
   }
 
   #content{
