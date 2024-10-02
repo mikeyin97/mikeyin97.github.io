@@ -38,7 +38,7 @@ p{
 #Avatar {
   margin-top:50px;
   border-radius: 50%;
-  height:150px;
+  height:200px;
   margin-left: auto;  /* Magic! */
   margin-right:auto;
   max-width: 100%;
@@ -50,6 +50,11 @@ p{
   float:left;
   width:18%;
   border-radius: 10;
+  display: flex;                  /* Use Flexbox layout */
+  flex-direction: column;         /* Arrange items vertically */
+  align-items: center;            /* Center items horizontally */
+  text-align: center;             /* Center text within the div */
+  
 }
 
 #topright{
@@ -61,6 +66,10 @@ p{
   margin-top: 20px;
   float:left;
   width:100%;
+  display: flex;                  /* Use Flexbox layout */
+  justify-content: center;        /* Center the icons horizontally */
+  align-items: center;            /* Optional: Center them vertically if the div has height */
+  gap: 15px;                     /* Optional: Add space between icons */
 }
 .fa{
   margin-right: 20px;
@@ -158,9 +167,23 @@ p{
 
 }
 
-#footer{
-  clear:both;
-  height:50px;
+#footer {
+  clear: both;
+  position: relative;                      /* Positioning context for the image */
+  height: 50px;                            /* Height of the footer */
+  overflow: hidden;                        /* Hide overflow */
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Gradient */
+}
+
+#footer-image {
+  position: absolute;                      /* Position the image absolutely */
+  bottom: 0;                               /* Align to the bottom of the footer */
+  left: 0;                                 /* Align to the left of the footer */
+  width: 100%;                             /* Full width of the footer */
+  height: 200%;                            /* Full height of the footer */
+  opacity: 0.8;                            /* Make the image slightly transparent */
+  /* object-fit: cover;                       Ensure the image covers the footer */
+  z-index: -1;                             /* Send the image behind footer content */
 }
 
 .container{
