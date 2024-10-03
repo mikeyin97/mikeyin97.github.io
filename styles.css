@@ -154,6 +154,20 @@ p{
 
 }
 
+#topright2{
+  float:left;
+  width:85%;
+  margin-left: 50px;
+  margin-top:-15px;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  height: 100%; /* Ensure the div has height */
+
+
+}
+
 
 
 
