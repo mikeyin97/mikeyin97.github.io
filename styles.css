@@ -262,7 +262,12 @@ p{
 
   #topleft1{
     width: 10%;
+    padding-top: 10px;
   
+  }
+
+  .first{
+    top: 100px;
   }
 
   #topright1{
@@ -275,6 +280,10 @@ p{
   #topleft{
     width: 100%;
     margin:0 auto;
+  }
+
+  .first{
+    padding-top: 50px !important;
   }
 
   #topright{
