@@ -144,7 +144,7 @@ p{
   float:left;
   width:85%;
   margin-left: 50px;
-  margin-top:-30px;
+  margin-top:-20px;
   padding:0;
   display: flex;
   flex-direction: column;
@@ -262,7 +262,12 @@ p{
 
   #topleft1{
     width: 10%;
+n
   
+  }
+
+  .first{
+    top: 100px;
   }
 
   #topright1{
@@ -275,6 +280,10 @@ p{
   #topleft{
     width: 100%;
     margin:0 auto;
+  }
+
+  .first{
+    padding-top: 50px !important;
   }
 
   #topright{
