@@ -295,6 +295,11 @@ p{
     margin:0 auto;
   }
 
+  #topleft1{
+    width: 0%;
+  
+  }
+
   .first{
     padding-top: 50px !important;
   }
