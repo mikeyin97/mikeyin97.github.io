@@ -118,6 +118,7 @@ p{
 
 .projicon1{
   margin-left: 50px;
+  margin-top: 10px;
   border-radius:10%;
   height: 80px;
   width: 80px;
@@ -140,7 +141,8 @@ p{
   margin:0;
   padding:0;
   border-radius: 10;
-
+  display: flex;
+  
 }
 
 #topright1{
@@ -203,15 +205,21 @@ p{
   z-index: -1;                             /* Send the image behind footer content */
 }
 
-.container{
-  clear:both;
+.container {
+  display: flex;
+  align-items: stretch;  /* Stretch both child divs to the same height */
+  gap: 1rem;
   padding-top: 10px;
-  height: 100%;
+  clear: both;
 }
+
 
 .container3{
   clear:both;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  height: 100%;
+  display: flex;
 }
 
 
