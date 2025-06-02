@@ -106,6 +106,7 @@ p{
   padding-top:10px;
   clear:both;
   height: 80px;
+  height: 100%;
 }
 
 .projicon{
@@ -205,6 +206,7 @@ p{
 .container{
   clear:both;
   padding-top: 10px;
+  height: 100%;
 }
 
 .container3{
@@ -222,6 +224,7 @@ p{
   margin-top:40px;
   overflow: hidden;
   border-bottom: 2px solid black;
+  height: 100%;
 }
 
 /* Style the buttons inside the tab */
@@ -254,6 +257,7 @@ p{
   display: none;
   padding: 6px 12px;
   margin-top: 20px;
+  clear: both;
 }
 
 
@@ -264,7 +268,6 @@ p{
 
   #topleft1{
     width: 10%;
-n
   
   }
 
@@ -317,7 +320,7 @@ n
   .tabcontent {
   display: none;
   padding: 6px 12px;
-
+  clear: both;
   }
 
   #content{
