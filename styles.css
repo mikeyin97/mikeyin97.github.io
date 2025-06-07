@@ -451,12 +451,12 @@ input:checked + .slider:before {
 }
 
 .misctext {
-  flex: 1 1 300px;
+  flex: 1 1;
   min-width: 0;
 }
 
 .pikachu {
-  flex: 1 1 300px;
+  flex: 1 1;
   min-width: 0;
   display: flex;
   justify-content: center;
