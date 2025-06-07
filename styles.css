@@ -462,7 +462,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .pikachu img {
