@@ -175,7 +175,9 @@ p{
 
 
 
-
+body {
+  overflow-x: hidden;
+}
 
 #topall1{
   float:left;
@@ -439,30 +441,33 @@ input:checked + .slider:before {
   margin-left: -10px;
   
 }
-
 #Misc {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .misctext {
   flex: 1 1 300px;
-  min-width: 280px;
+  min-width: 0;
 }
 
 .pikachu {
   flex: 1 1 300px;
-  min-width: 200px;
+  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  max-width: 300px;
 }
 
 .pikachu img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 12px;
+  display: block;
 }
