@@ -72,7 +72,7 @@ p{
   gap: 15px;                     /* Optional: Add space between icons */
 }
 .fa{
-  margin-right: 20px;
+  margin: 0px 5px;
 }
 
 #content{
@@ -471,3 +471,4 @@ input:checked + .slider:before {
   object-fit: contain;
   display: block;
 }
+
