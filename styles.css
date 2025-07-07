@@ -71,6 +71,7 @@ p{
   align-items: center;            /* Optional: Center them vertically if the div has height */
   gap: 15px;                     /* Optional: Add space between icons */
 }
+
 .fa{
   margin: 0px 5px;
 }
