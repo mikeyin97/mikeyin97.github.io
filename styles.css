@@ -118,7 +118,7 @@ p{
 }
 
 .projicon1{
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 10px;
   border-radius:10%;
   height: 80px;
@@ -129,7 +129,7 @@ p{
 
 .projicon2{
   margin-top: -20px;
-  margin-left: 40px;
+  margin-left: 10px;
   border-radius:0%;
   height: 110px;
   width: 110px
@@ -149,7 +149,7 @@ p{
 #topright1{
   float:left;
   width:85%;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top:-20px;
   padding:0;
   display: flex;
