@@ -128,13 +128,14 @@ p{
   object-fit: cover;
   overflow: hidden;
 }
-
 .projicon2{
-  margin-top: -20px;
-  margin-left: 10px;
-  border-radius:0%;
-  height: 110px;
-  width: 110px
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius:10%;
+  height: 80px;
+  width: 120px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 
