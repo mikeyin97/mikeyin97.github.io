@@ -128,6 +128,15 @@ p{
   object-fit: cover;
   overflow: hidden;
 }
+
+.projicon3{
+  margin-top: -20px;
+  margin-left: 10px;
+  border-radius:0%;
+  height: 110px;
+  width: 110px
+}
+
 .projicon2{
   margin-left: 20px;
   margin-top: 10px;
@@ -166,7 +175,7 @@ p{
 #topright2{
   float:left;
   width:85%;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top:-15px;
   padding:0;
   display: flex;
@@ -363,6 +372,12 @@ body {
     display: none;
     margin: 0px;
   }
+
+  .projicon3{
+    display: none;
+    margin: 0px;
+  }
+
 
   #toggle {
     display: none;
