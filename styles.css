@@ -71,7 +71,7 @@ p{
   display: flex;                  /* Use Flexbox layout */
   justify-content: center;        /* Center the icons horizontally */
   align-items: center;            /* Optional: Center them vertically if the div has height */
-  gap: 15px;                     /* Optional: Add space between icons */
+  gap: 8px;                     /* Optional: Add space between icons */
 }
 
 .fa{
