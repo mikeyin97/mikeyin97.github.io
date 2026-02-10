@@ -1,56 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <script>
-    function setStyleSheet(){
-      var stylesheet = document.getElementById("stylesheet");
-      console.log(stylesheet.href);
-      if (stylesheet.href.includes("styles.css")){
-        stylesheet.setAttribute("href", "styles2.css");
+  <head>
+    <script>
+      function setStyleSheet() {
+        var stylesheet = document.getElementById("stylesheet");
+        console.log(stylesheet.href);
+        if (stylesheet.href.includes("styles.css")) {
+          stylesheet.setAttribute("href", "styles2.css");
+        } else if (stylesheet.href.includes("styles2.css")) {
+          stylesheet.setAttribute("href", "styles.css");
+        }
       }
-      else if (stylesheet.href.includes("styles2.css")){
-        stylesheet.setAttribute("href", "styles.css");
-      }
-      
-    }
-  </script>
-  <script>
-    function openDiv(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
     </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Michael Yin</title>
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Mansalva&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="styles.css" id="stylesheet">
-  <link rel="icon" href="favicon.ico" />
+    <script>
+      function openDiv(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Yin</title>
 
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Mansalva&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="styles.css" id="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
 
-<body>
-  
-
-
-
-
-  <div id="content">
-
-    <!-- <div id = "toggle">
+  <body>
+    <div id="content">
+      <!-- <div id = "toggle">
       <p id = "p1">Dark Mode</p>
       <label class="switch">
         <input type="checkbox" onclick="setStyleSheet()">
@@ -58,425 +57,790 @@
       </label>
 
     </div> -->
-   
 
-
-  <div id="topleft">
-      <img src="imgs/mechina.jpg" id="Avatar">
-      <div id = "icons">
-        <a href="https://github.com/mikeyin97" target="_blank">
-          <img src="imgs/github.png" alt="Github" style="width:36px; height:36px;">
-        </a>
-        <a href="https://scholar.google.com/citations?user=frPDMvUAAAAJ&hl=en&inst=17001591832933267808" target="_blank">
-              <img src="imgs/scholar.png" alt="Google Scholar" style="width:36px; height:36px;">
-        </a>
-        <a href="https://orcid.org/0000-0003-1164-5229" target="_blank">
-          <img src="imgs/orcid.png" alt="ORCID" style="width:36px; height:36px;">
-        </a>
-        <a href="https://www.linkedin.com/in/michael-yin/" target="_blank">
-          <img src="imgs/linkedin.png" alt="Linkedin" style="width:36px; height:36px;">
-        </a>
-        <a href="https://substack.com/@itsmichaelyin" target="_blank">
-          <img src="imgs/substack.png" alt="Substack" style="width:36px; height:36px;">
-        </a>
+      <div id="topleft">
+        <img src="imgs/mechina.jpg" id="Avatar" />
+        <div id="icons">
+          <a href="https://github.com/mikeyin97" target="_blank">
+            <img
+              src="imgs/github.png"
+              alt="Github"
+              style="width: 36px; height: 36px"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=frPDMvUAAAAJ&hl=en&inst=17001591832933267808"
+            target="_blank"
+          >
+            <img
+              src="imgs/scholar.png"
+              alt="Google Scholar"
+              style="width: 36px; height: 36px"
+            />
+          </a>
+          <a href="https://orcid.org/0000-0003-1164-5229" target="_blank">
+            <img
+              src="imgs/orcid.png"
+              alt="ORCID"
+              style="width: 36px; height: 36px"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/michael-yin/" target="_blank">
+            <img
+              src="imgs/linkedin.png"
+              alt="Linkedin"
+              style="width: 36px; height: 36px"
+            />
+          </a>
+          <a href="https://substack.com/@itsmichaelyin" target="_blank">
+            <img
+              src="imgs/substack.png"
+              alt="Substack"
+              style="width: 36px; height: 36px"
+            />
+          </a>
+        </div>
       </div>
-      
-    </div>
-    <div id="topright">
-      <!-- <a onclick = "setStyleSheet('styles2.css')" href='#'> test</a> -->
+      <div id="topright">
+        <!-- <a onclick = "setStyleSheet('styles2.css')" href='#'> test</a> -->
 
-
-      <h1>Hello, I'm Michael!</h1>
-      <h2>I'm a 4th-year PhD candidate at UBC in Human-Computer Interaction</h2>
-      <p>My research is about <span class = "bolder">understanding, supporting, and designing for the enduring parts of being human</span>. </p>
-        <p>Even as technology shifts and transforms, our messy - but deeply meaningful - human emotions remain. I design systems that help people notice, hold, and make meaning from what it is to be human: to explore, to connect, to express, to grieve, to grow. </p>
+        <h1>Hello, I'm Michael!</h1>
+        <h2>
+          I'm a 4th-year PhD candidate at UBC in Human-Computer Interaction
+        </h2>
         <p>
-        I am currently supervised by Professor <a href="https://www.robertxiao.ca/" target="_blank">Robert Xiao</a> at the <a href="https://ubc-x-lab.github.io/" target=""_blank>UBC X-Lab</a>, with whom I also did my Master's. Previously, I completed my undergraduate studies in engineering science at UofT. Beyond research, I enjoy narrative-focussed video games, badminton, and long runs.
-      
-        If you are interested in chatting about my research, my academic journey or anything else, feel free to send me a message on any of my socials!
-      </p>
-      <p><a href="files/cv.pdf" target="_blank">Curriculum Vitae</a></p>
-      <p><b>Contact:</b> <a href="mailto:jiyin@cs.ubc.ca">jiyin@cs.ubc.ca</a></p>
-      
-    </div>
-    
-    <div class="subcontent">
-      <div class = "tab">
-        <button class="tablinks active" onclick="openDiv(event, 'Publications')"><h3>Publications</h3></button>
-        <button class="tablinks" onclick="openDiv(event, 'Research')"><h3>Other Research</h3></button> 
-        <button class="tablinks" onclick="openDiv(event, 'Projects')"><h3>Other Projects</h3></button>
-        <button class="tablinks" onclick="openDiv(event, 'Misc')"><h3>Misc</h3></button>
-        <!-- <button class="tablinks" onclick="openDiv(event, 'Service')"><h3>Academic Service</h3></button> -->
-      </div>
-    </div>
-
-    <div id = "Publications" class = "tabcontent" style="display:block">
-
-      
-        <div class="container">
-        <div id="topleft1">
-            <img src="imgs/block.jpg" class="projicon2">
-        </div>
-        <div id="topright1">
-            <h4>[<span class="conf">CSCW 2026</span>] Dissolving a Digital Relationship: A Critical Examination of Digital Severance Behaviours in Close Relationships </h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>*, Angela Chiang*, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;"> [<a href="files/severance.pdf" target="_blank">preprint</a>] [<a href="https://substack.com/home/post/p-183174733" target="_blank">blogpost</a>]
-               
-            </p> 
-            <!-- <p class="extraspace">  &nbsp -->
-            </p> 
-        </div>
+          My research is about
+          <span class="bolder"
+            >understanding, supporting, and designing for the enduring parts of
+            being human</span
+          >.
+        </p>
+        <p>
+          Even as technology shifts and transforms, our messy - but deeply
+          meaningful - human emotions remain. I design systems to hold space for
+          people's feelings, creating room for them to notice, reflect on, and make
+          meaning from moments of happiness, anger, sorrow, grief, and
+          uncertainty.
+        </p>
+        <p>
+          I am currently supervised by Professor
+          <a href="https://www.robertxiao.ca/" target="_blank">Robert Xiao</a>
+          at the
+          <a href="https://ubc-x-lab.github.io/" target="" _blank>UBC X-Lab</a>,
+          with whom I also did my Master's. Previously, I completed my
+          undergraduate studies in engineering science at UofT. Beyond research,
+          I enjoy narrative-focussed video games, badminton, and long runs. If
+          you are interested in chatting about my research, my academic journey
+          or anything else, feel free to send me a message on any of my socials!
+        </p>
+        <p><a href="files/cv.pdf" target="_blank">Curriculum Vitae</a></p>
+        <p>
+          <b>Contact:</b> <a href="mailto:jiyin@cs.ubc.ca">jiyin@cs.ubc.ca</a>
+        </p>
       </div>
 
-
-      <div class="container">
-        <div id="topleft1">
-            <img src="imgs/apppicture.jpg" class="projicon2">
-        </div>
-        <div id="topright1">
-            <h4>[<span class="conf">IMWUT 2025</span>] TravelTales: Reflecting on Meaningful Travel through Digital Scrapbooking and Journaling </h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;"> [<a href="https://dl.acm.org/doi/10.1145/3749512" target="_blank">pdf</a>] [<a href="files/imwut2025.pdf" target="_blank">preprint</a>]
-               
-            </p> 
-            <!-- <p class="extraspace">  &nbsp -->
-            </p> 
+      <div class="subcontent">
+        <div class="tab">
+          <button
+            class="tablinks active"
+            onclick="openDiv(event, 'Publications')"
+          >
+            <h3>Publications</h3>
+          </button>
+          <button class="tablinks" onclick="openDiv(event, 'Research')">
+            <h3>Other Research</h3>
+          </button>
+          <button class="tablinks" onclick="openDiv(event, 'Projects')">
+            <h3>Other Projects</h3>
+          </button>
+          <button class="tablinks" onclick="openDiv(event, 'Misc')">
+            <h3>Misc</h3>
+          </button>
+          <!-- <button class="tablinks" onclick="openDiv(event, 'Service')"><h3>Academic Service</h3></button> -->
         </div>
       </div>
 
-
-      <div class="container">
-        <div id="topleft1">
-            <img src="imgs/VIBES.PNG" class="projicon2">
-        </div>
-        <div id="topright1">
-            <h4>[<span class="conf">IMX 2025</span>] VIBES: Exploring Viewer Spatial Interactions as Direct Input for Livestreamed Content </h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;"> [<a href="https://dl.acm.org/doi/10.1145/3706370.3727867" target="_blank">pdf</a>] [<a href="files/vibes.pdf" target="_blank">preprint</a>] [<a href="https://youtu.be/j4TNwweRSsg" target="_blank">video</a>]
-              
-            </p> 
-            <!-- <p class="extraspace">  &nbsp -->
-            </p> 
-        </div>
-      </div>
-
-      <div class="container">
-        <div id="topleft1">
-            <img src="imgs/vtuber.png" class="projicon2">
-        </div>
-        <div id="topright1">
-            <h4>[<span class="conf">IMX 2025</span>] Investigating Viewer Interaction, Engagement, and Relationships with Avatarized Virtual Livestreamers </h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Chenxinran Shen, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;">  [<a href="https://dl.acm.org/doi/10.1145/3706370.3727866" target="_blank">pdf</a>] [<a href="files/Vtubers.pdf" target="_blank">preprint</a>] [<a href="https://youtu.be/0CjQDqiqGos" target="_blank">video</a>] 
-            </p> 
-            <!-- <p class="extraspace">  &nbsp -->
-            </p> 
-        </div>
-      </div>
-
-      <div class="container">
-          <div id="topleft1">
-              <img src="imgs/chi.png" style="object-fit: contain;" class="projicon2">
-          </div>
-          <div id="topright1">
-              <h4>[<span class="conf">CHI 2025 DC</span>] Understanding and Supporting Interactions with Virtual Agents </h4>
-              <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span></b></p>
-              <p style="margin : 0; padding-top:10px;"> [<a href="https://dl.acm.org/doi/10.1145/3706599.3721090" target="_blank">pdf</a>] [<a href="files/dc.pdf" target="_blank">preprint</a>]
-              </p> 
-              <!-- <p class="extraspace">  &nbsp -->
-              </p> 
-          </div>
-      </div>
-
-
-      <div class="container">
-          <div id="topleft1">
-              <img src="imgs/travelgalleria.png" class="projicon2">
-          </div>
-          <div id="topright1">
-              <h4>[<span class="conf">CHI 2025</span>] TravelGalleria: Supporting Remembrance and Reflection of Travel Experiences through Digital Storytelling in VR </h4>
-              <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-              <p style="margin : 0; padding-top:10px;"> [<a href="https://dl.acm.org/doi/10.1145/3706598.3713398" target="_blank">pdf</a>] [<a href="files/chi2025.pdf" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=Xjc8MhFlNXA&feature=youtu.be" target="_blank">preview</a>] [<a href="https://www.youtube.com/watch?v=D9Ugtp_eZrA" target="_blank">video</a>]
-                (<span class="info">Honorable Mention 🏅</span>)
-              </p> 
-              <!-- <p class="extraspace">  &nbsp -->
-              </p> 
-          </div>
-      </div>
-
-
-      <div class="container">
-          <div id="topleft1">
-              <img src="imgs/car.png" class="projicon2">
-          </div>
-          <div id="topright1">
-              <h4>[<span class="conf">CSCW 2024</span>] How We See Changes How We Feel: Investigating the Effect of Visual Point-of-View on Decision-Making in VR </h4>
-              <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-              <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3686933" target="_blank">pdf</a>] [<a href="files/CSCW394.pdf" target="_blank">preprint</a>] [<a href="https://medium.com/acm-cscw/how-we-see-changes-how-we-feel-investigating-the-effect-of-visual-point-of-view-on-decision-making-7e8f984a57b9" target="_blank">blogpost</a>]
-              </p>
-              <!-- <p class="extraspace">  &nbsp -->
-              </p> 
-          </div>
-      </div>
-
-    
+      <div id="Publications" class="tabcontent" style="display: block">
         <div class="container">
           <div id="topleft1">
-              <img src="imgs/vrnexus.png" class="projicon2">
+            <img src="imgs/unsent.png" class="projicon2" />
           </div>
           <div id="topright1">
-              <h4>[<span class="conf">UIST 2024</span>] VirtualNexus: Enhancing 360-Degree Video AR/VR Collaboration with Environment Cutouts and Virtual Replicas </h4>
-              <p style="margin-bottom:0;">Xincheng Huang*, <span class="bolder">Michael Yin</span>*, Ziyi Xia, Robert Xiao</b></p>
-              <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3654777.3676377" target="_blank">pdf</a>] [<a href="https://arxiv.org/pdf/2408.02914" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=P4gYAOsB7-c" target="_blank">video figure</a>] [<a href="https://www.youtube.com/watch?v=aeaw1di2ffM&t=763s&ab_channel=ACMSIGCHI" target="_blank">video</a>]
-              
-              </p>
-              <!-- <p class="extraspace">  &nbsp -->
-              </p> 
+            <h4>
+              [<span class="conf">CHI 2026</span>] The Words That Can't Be
+              Shared: Exploring the Design of Unsent Messages
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a href="files/unsent.pdf" target="_blank">preprint</a>]
+            </p>
+            <p class="extraspace"></p>
           </div>
         </div>
 
-      
         <div class="container">
-            <div id="topleft1">
-                <img src="imgs/NPC.png" class="projicon2">
-            </div>
-            <div id="topright1">
-                <h4>[<span class="conf">CHI PLAY 2024</span>] Press A or Wave: User Expectations for NPC Interactions and Nonverbal Behaviour in Virtual Reality</h4>
-                <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-                <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3677098" target="_blank">pdf</a>] [<a href="files/CHIPLAY333.pdf" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=PJF5pTyEAa8" target="_blank">video</a>] 
-                
-                </p>
-                <!-- <p class="extraspace">  &nbsp -->
-                </p> 
-            </div>
-        </div>
-
-
-
-
-        <div class="container">
-            <div id="topleft1">
-            <img src="imgs/Fig1.PNG" class="projicon2">
-            </div>
-            <div id="topright1">
-            <h4>[<span class="conf">CHI 2024</span>] Lies, Deceit, and Hallucinations: Player Perception and Expectations Regarding Trust and Deception in Games </h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Emi Wang, Chuoxi Ng, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3613904.3642253" target="_blank">pdf</a>] [<a href="files/chi2024.pdf" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=HabNtJ1R6ZY" target="_blank">preview</a>]  [<a href="https://www.youtube.com/watch?v=gatabXKNKHI" target="_blank">video</a>]
-            
+          <div id="topleft1">
+            <img src="imgs/embodied.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI 2026</span>] Reflective Motion and a
+              Physical Canvas: Exploring Embodied Journaling in Virtual Reality
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao, Nadine
+              Wagener
             </p>
-            <!-- <p class="extraspace">  &nbsp -->
-            </p> 
-            </div>
+            <p style="margin: 0; padding-top: 10px">
+              [<a href="files/embodied.pdf" target="_blank">preprint</a>]
+            </p>
+            <p class="extraspace"></p>
+          </div>
         </div>
 
         <div class="container">
-            <div id="topleft1">
-            <img src="imgs/sleepvr.jpg" class="projicon2">
-            </div>
-            <div id="topright1">
-            <h4>[<span class="conf">CHI 2023</span>] Drifting Off in Paradise: Why People Sleep in Virtual Reality</h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3544548.3580947" target="_blank">pdf</a>] [<a href="files/chi2023.pdf" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=XkEmvi472O4" target="_blank">preview</a>]  [<a href="https://youtu.be/av8Gt_4TEh8" target="_blank">video</a>]
-            
+          <div id="topleft1">
+            <img src="imgs/block.jpg" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CSCW 2026</span>] Dissolving a Digital
+              Relationship: A Critical Examination of Digital Severance
+              Behaviours in Close Relationships
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>*, Angela Chiang*, Robert
+              Xiao
             </p>
-            <!-- <p class="extraspace">  &nbsp -->
-            </p> 
-            </div>
+            <p style="margin: 0; padding-top: 10px">
+              [<a href="files/severance.pdf" target="_blank">preprint</a>] [<a
+                href="https://substack.com/home/post/p-183174733"
+                target="_blank"
+                >blogpost</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
         </div>
-
 
         <div class="container">
-            <div id="topleft1">
-            <img src="imgs/choices2.png" class="projicon2">
-            </div>
-            <div id="topright1">
-            <h4>[<span class="conf">DIS 2022</span>] How Should I Respond to “Good Morning?”: Understanding Choice in Narrative-Rich Games</h4>
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3532106.3533459" target="_blank">pdf</a>] [<a href="files/dis2022.pdf" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=pQOHcXV0U24" target="_blank">preview</a>] [<a href="https://www.youtube.com/watch?v=ZyIa5o9b5tc" target="_blank">video</a>]
-                [<a href="https://www.cs.ubc.ca/news/2022/07/two-honourable-mention-awards-cs-researchers-systems-design-conference" target="_blank">article</a>]
-                (<span class="info">Honorable Mention 🏅</span>)
+          <div id="topleft1">
+            <img src="imgs/apppicture.jpg" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">IMWUT 2025</span>] TravelTales: Reflecting on
+              Meaningful Travel through Digital Scrapbooking and Journaling
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
             </p>
-            <!-- <p class="extraspace">  &nbsp -->
+            <p style="margin: 0; padding-top: 10px">
+              [<a href="https://dl.acm.org/doi/10.1145/3749512" target="_blank"
+                >pdf</a
+              >] [<a href="files/imwut2025.pdf" target="_blank">preprint</a>]
             </p>
-            </div>
+            <p class="extraspace"></p>
+          </div>
         </div>
 
-        <div class="container"> 
-            <div id="topleft1">
-            <img src="imgs/apexgacha.png" class="projicon2">
-            </div>
-            <div id="topright1">
-            <h4>[<span class="conf">CHI 2022</span>] The Reward for Luck: Understanding the Effect of Random Reward Mechanisms in Video Games on Player Experience</a></h4>
-
-            <p style="margin-bottom:0;"><span class="bolder">Michael Yin</span>, Robert Xiao</b></p>
-            <p style="margin : 0; padding-top:10px;">[<a href="https://dl.acm.org/doi/10.1145/3491102.3517642" target="_blank">pdf</a>] [<a href="files/chi2022.pdf" target="_blank">preprint</a>] [<a href="https://www.youtube.com/watch?v=63l8AV36C5g" target="_blank">preview</a>]  [<a href="https://www.youtube.com/watch?v=9wLjva1hPj8" target="_blank">video</a>]
-            
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/VIBES.PNG" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">IMX 2025</span>] VIBES: Exploring Viewer
+              Spatial Interactions as Direct Input for Livestreamed Content
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
             </p>
-            <!-- <p class="extraspace">  &nbsp -->
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3706370.3727867"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/vibes.pdf" target="_blank">preprint</a>] [<a
+                href="https://youtu.be/j4TNwweRSsg"
+                target="_blank"
+                >video</a
+              >]
             </p>
-            </div>
+            <p class="extraspace"></p>
+          </div>
         </div>
 
-      
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/vtuber.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">IMX 2025</span>] Investigating Viewer
+              Interaction, Engagement, and Relationships with Avatarized Virtual
+              Livestreamers
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Chenxinran Shen, Robert
+              Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3706370.3727866"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/Vtubers.pdf" target="_blank">preprint</a>] [<a
+                href="https://youtu.be/0CjQDqiqGos"
+                target="_blank"
+                >video</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
 
-    </div>  
+        <div class="container">
+          <div id="topleft1">
+            <img
+              src="imgs/chi.png"
+              style="object-fit: contain"
+              class="projicon2"
+            />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI 2025 DC</span>] Understanding and
+              Supporting Interactions with Virtual Agents
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3706599.3721090"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/dc.pdf" target="_blank">preprint</a>]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
 
-    <div id = "Research" class = "tabcontent">
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/travelgalleria.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI 2025</span>] TravelGalleria: Supporting
+              Remembrance and Reflection of Travel Experiences through Digital
+              Storytelling in VR
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3706598.3713398"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/chi2025.pdf" target="_blank">preprint</a>] [<a
+                href="https://www.youtube.com/watch?v=Xjc8MhFlNXA&feature=youtu.be"
+                target="_blank"
+                >preview</a
+              >] [<a
+                href="https://www.youtube.com/watch?v=D9Ugtp_eZrA"
+                target="_blank"
+                >video</a
+              >] (<span class="info">Honorable Mention 🏅</span>)
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/car.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CSCW 2024</span>] How We See Changes How We
+              Feel: Investigating the Effect of Visual Point-of-View on
+              Decision-Making in VR
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a href="https://dl.acm.org/doi/10.1145/3686933" target="_blank"
+                >pdf</a
+              >] [<a href="files/CSCW394.pdf" target="_blank">preprint</a>] [<a
+                href="https://medium.com/acm-cscw/how-we-see-changes-how-we-feel-investigating-the-effect-of-visual-point-of-view-on-decision-making-7e8f984a57b9"
+                target="_blank"
+                >blogpost</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/vrnexus.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">UIST 2024</span>] VirtualNexus: Enhancing
+              360-Degree Video AR/VR Collaboration with Environment Cutouts and
+              Virtual Replicas
+            </h4>
+            <p style="margin-bottom: 0">
+              Xincheng Huang*, <span class="bolder">Michael Yin</span>*, Ziyi
+              Xia, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3654777.3676377"
+                target="_blank"
+                >pdf</a
+              >] [<a href="https://arxiv.org/pdf/2408.02914" target="_blank"
+                >preprint</a
+              >] [<a
+                href="https://www.youtube.com/watch?v=P4gYAOsB7-c"
+                target="_blank"
+                >video figure</a
+              >] [<a
+                href="https://www.youtube.com/watch?v=aeaw1di2ffM&t=763s&ab_channel=ACMSIGCHI"
+                target="_blank"
+                >video</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/NPC.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI PLAY 2024</span>] Press A or Wave: User
+              Expectations for NPC Interactions and Nonverbal Behaviour in
+              Virtual Reality
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a href="https://dl.acm.org/doi/10.1145/3677098" target="_blank"
+                >pdf</a
+              >] [<a href="files/CHIPLAY333.pdf" target="_blank">preprint</a>]
+              [<a
+                href="https://www.youtube.com/watch?v=PJF5pTyEAa8"
+                target="_blank"
+                >video</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/Fig1.PNG" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI 2024</span>] Lies, Deceit, and
+              Hallucinations: Player Perception and Expectations Regarding Trust
+              and Deception in Games
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Emi Wang, Chuoxi Ng,
+              Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3613904.3642253"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/chi2024.pdf" target="_blank">preprint</a>] [<a
+                href="https://www.youtube.com/watch?v=HabNtJ1R6ZY"
+                target="_blank"
+                >preview</a
+              >] [<a
+                href="https://www.youtube.com/watch?v=gatabXKNKHI"
+                target="_blank"
+                >video</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/sleepvr.jpg" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI 2023</span>] Drifting Off in Paradise: Why
+              People Sleep in Virtual Reality
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3544548.3580947"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/chi2023.pdf" target="_blank">preprint</a>] [<a
+                href="https://www.youtube.com/watch?v=XkEmvi472O4"
+                target="_blank"
+                >preview</a
+              >] [<a href="https://youtu.be/av8Gt_4TEh8" target="_blank"
+                >video</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/choices2.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">DIS 2022</span>] How Should I Respond to “Good
+              Morning?”: Understanding Choice in Narrative-Rich Games
+            </h4>
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3532106.3533459"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/dis2022.pdf" target="_blank">preprint</a>] [<a
+                href="https://www.youtube.com/watch?v=pQOHcXV0U24"
+                target="_blank"
+                >preview</a
+              >] [<a
+                href="https://www.youtube.com/watch?v=ZyIa5o9b5tc"
+                target="_blank"
+                >video</a
+              >] [<a
+                href="https://www.cs.ubc.ca/news/2022/07/two-honourable-mention-awards-cs-researchers-systems-design-conference"
+                target="_blank"
+                >article</a
+              >] (<span class="info">Honorable Mention 🏅</span>)
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="topleft1">
+            <img src="imgs/apexgacha.png" class="projicon2" />
+          </div>
+          <div id="topright1">
+            <h4>
+              [<span class="conf">CHI 2022</span>] The Reward for Luck:
+              Understanding the Effect of Random Reward Mechanisms in Video
+              Games on Player Experience
+            </h4>
+
+            <p style="margin-bottom: 0">
+              <span class="bolder">Michael Yin</span>, Robert Xiao
+            </p>
+            <p style="margin: 0; padding-top: 10px">
+              [<a
+                href="https://dl.acm.org/doi/10.1145/3491102.3517642"
+                target="_blank"
+                >pdf</a
+              >] [<a href="files/chi2022.pdf" target="_blank">preprint</a>] [<a
+                href="https://www.youtube.com/watch?v=63l8AV36C5g"
+                target="_blank"
+                >preview</a
+              >] [<a
+                href="https://www.youtube.com/watch?v=9wLjva1hPj8"
+                target="_blank"
+                >video</a
+              >]
+            </p>
+            <p class="extraspace"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Research" class="tabcontent">
         <div class="container3">
           <div id="topleft1">
-            <img src="imgs/curling.png" class="projicon2">
+            <img src="imgs/curling.png" class="projicon2" />
           </div>
           <div id="topright1">
             <h4>Points Gained in Curling</h4>
 
-            <p style="margin-bottom:0;">Undergraduate Thesis by <i>Michael Yin</i>, Supervised by <i>Timothy Chan</i> <b>(2020)</b></p>
-            <p style="margin : 0; padding-top:0;">Accepted and presented at <b><a href="https://uwaterloo.ca/canadian-operational-research-society-conference/">CORS 2021</a></b> </p>
-            <p> Modelling the game of curling as a finite-horizon Markov reward process to evaluate play and develop optimal strategies.
+            <p style="margin-bottom: 0">
+              Undergraduate Thesis by <i>Michael Yin</i>, Supervised by
+              <i>Timothy Chan</i> <b>(2020)</b>
+            </p>
+            <p style="margin: 0; padding-top: 0">
+              Accepted and presented at
+              <b
+                ><a
+                  href="https://uwaterloo.ca/canadian-operational-research-society-conference/"
+                  >CORS 2021</a
+                ></b
+              >
+            </p>
+            <p>
+              Modelling the game of curling as a finite-horizon Markov reward
+              process to evaluate play and develop optimal strategies.
             </p>
           </div>
         </div>
 
         <div class="container3">
           <div id="topleft1">
-            <img src="imgs/structured_light.png" class="projicon2">
+            <img src="imgs/structured_light.png" class="projicon2" />
           </div>
           <div id="topright1">
-            <h4> 3D Depth Using Structured Light Imaging</h4>
-            <p> Summer Research Project in the lab of <i>Kyros Kutulakos</i> <b>(2017)</b> </p>
-            <p> Using projected sequences of structured light (binary patterns of light) to determine 
-              depth information in a given scene. 
+            <h4>3D Depth Using Structured Light Imaging</h4>
+            <p>
+              Summer Research Project in the lab of <i>Kyros Kutulakos</i>
+              <b>(2017)</b>
+            </p>
+            <p>
+              Using projected sequences of structured light (binary patterns of
+              light) to determine depth information in a given scene.
             </p>
           </div>
         </div>
 
         <div class="container3">
           <div id="topleft1">
-            <img src="imgs/biosensor.png" class="projicon2">
+            <img src="imgs/biosensor.png" class="projicon2" />
           </div>
           <div id="topright1">
-            <h4> Biomedical Wearable for Performance Tracking</h4>
-            <p> Summer Research Project in the lab of <i>Roman Genov</i> <b>(2016)</b> </p>
-            <p> Unsupervised learning on cleaned EMG signals to predict the type and intensity of arm motion to create a proof-of-concept wearable. 
+            <h4>Biomedical Wearable for Performance Tracking</h4>
+            <p>
+              Summer Research Project in the lab of <i>Roman Genov</i>
+              <b>(2016)</b>
+            </p>
+            <p>
+              Unsupervised learning on cleaned EMG signals to predict the type
+              and intensity of arm motion to create a proof-of-concept wearable.
             </p>
           </div>
         </div>
-    </div>  
-      
-    <div id = "Projects" class = "tabcontent">
-      <div class="container3">
-        <div id="topleft1">
-          <img src="imgs/wwtp.png" class="projicon1">
+      </div>
+
+      <div id="Projects" class="tabcontent">
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/wwtp.png" class="projicon1" />
+          </div>
+          <div id="topright2">
+            <a
+              href="https://www.cs.ubc.ca/~tmm/courses/547-22/projects/madonna-michael/report.pdf"
+              target="_blank"
+              ><h4>WWTPViz</h4></a
+            >
+            <p>
+              Data visualization project on global wastewater plants (for
+              CPSC547)
+            </p>
+          </div>
         </div>
-        <div id="topright2">
-          <a href="https://www.cs.ubc.ca/~tmm/courses/547-22/projects/madonna-michael/report.pdf" target="_blank"><h4>WWTPViz</h4></a>
-          <p> Data visualization project on global wastewater plants (for CPSC547) </p>
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/boba.png" class="projicon1" />
+          </div>
+          <div id="topright2">
+            <a href="https://bobadex.herokuapp.com/" target="_blank"
+              ><h4>BobaDex</h4></a
+            >
+            <p>
+              A site for users to find, share, and review bubble tea stores
+              (Deprecated until I find a new hosting site).
+            </p>
+          </div>
+        </div>
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/anime.png" class="projicon3" />
+          </div>
+          <div id="topright2">
+            <a href="https://anime-higher-lower.herokuapp.com/" target="_blank"
+              ><h4>Anime Higher or Lower</h4></a
+            >
+            <p>
+              A take on the
+              <a href="http://www.higherlowergame.com/" target="_blank"
+                >Higher or Lower</a
+              >
+              game, adjusted for anime (Deprecated until I find a new hosting
+              site).
+            </p>
+          </div>
+        </div>
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/restaurant.png" class="projicon3" />
+          </div>
+          <div id="topright2">
+            <a
+              href="https://www.amazon.com/mile-Restaurant-Recommender/dp/B07MDVZ3Y6"
+              target="_blank"
+              ><h4>Restaurant Recommender</h4></a
+            >
+            <p>
+              "Hey Alexa. Recommend me a good sushi restaurant in Vancouver."
+            </p>
+          </div>
+        </div>
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/bball.png" class="projicon3" />
+          </div>
+          <div id="topright2">
+            <a
+              href="https://github.com/mikeyin97/ncaa_nba_stats"
+              target="_blank"
+              ><h4>NBA/NCAA Data Analysis</h4></a
+            >
+            <p>
+              Do good shooters in the NCAA continue to be good shooters in the
+              NBA? A quick analysis.
+            </p>
+          </div>
+        </div>
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/keep.png" class="projicon1" />
+          </div>
+          <div id="topright2">
+            <a
+              href="https://www.figma.com/file/HhQ6ngVHkdpj4H1qlW7iTJ/CSC318-Hi-Fi-Final"
+              target="_blank"
+              ><h4>Keep - Smart Grocery App</h4></a
+            >
+            <p>
+              Mockup of smart shopping application to quickly scan receipts and
+              track groceries.
+            </p>
+          </div>
+        </div>
+        <div class="container3">
+          <div id="topleft1">
+            <img src="imgs/boble.png" class="projicon3" />
+          </div>
+          <div id="topright2">
+            <a
+              href="https://www.figma.com/file/stkoDuZf5b27SkuaI8dLaY/Events?node-id=0%3A1"
+              target="_blank"
+              ><h4>Boble</h4></a
+            >
+            <p>
+              Mockup of an online event-finding application for university
+              students.
+            </p>
+          </div>
         </div>
       </div>
-        <div class="container3">
-          <div id="topleft1">
-            <img src="imgs/boba.png" class="projicon1">
-          </div>
-          <div id="topright2">
-            <a href="https://bobadex.herokuapp.com/" target="_blank"><h4>BobaDex</h4></a>
-            <p> A site for users to find, share, and review bubble tea stores (Deprecated until I find a new hosting site). </p>
-          </div>
-        </div>
-        <div class="container3">
-          <div id="topleft1">
-            <img src="imgs/anime.png" class="projicon3">
-          </div>
-          <div id="topright2">
-            <a href="https://anime-higher-lower.herokuapp.com/" target="_blank"><h4>Anime Higher or Lower</h4></a>
-            <p> A take on the <a href="http://www.higherlowergame.com/" target="_blank">Higher or Lower</a> game, 
-            adjusted for anime (Deprecated until I find a new hosting site).</p>
-          </div>
-        </div>
-        <div class="container3">
-          <div id="topleft1">
-            <img src="imgs/restaurant.png" class="projicon3">
-          </div>
-          <div id="topright2">
-            <a href="https://www.amazon.com/mile-Restaurant-Recommender/dp/B07MDVZ3Y6" target="_blank"><h4>Restaurant Recommender</h4></a>
-            <p> "Hey Alexa. Recommend me a good sushi restaurant in Vancouver." </p>
-          </div>
-        </div>
-        <div class="container3">
-          <div id="topleft1">
-            <img src="imgs/bball.png" class="projicon3">
-          </div>
-          <div id="topright2">
-            <a href="https://github.com/mikeyin97/ncaa_nba_stats" target="_blank"><h4>NBA/NCAA Data Analysis</h4></a>
-            <p> Do good shooters in the NCAA continue to be good shooters in the NBA? A quick analysis. </p>
-          </div>
-        </div>
-        <div class="container3">
-          <div id="topleft1">
-            <img src="imgs/keep.png" class="projicon1">
-          </div>
-          <div id="topright2">
-            <a href="https://www.figma.com/file/HhQ6ngVHkdpj4H1qlW7iTJ/CSC318-Hi-Fi-Final" target="_blank"><h4>Keep - Smart Grocery App</h4></a>
-            <p> Mockup of smart shopping application to quickly scan receipts and track groceries. </p>
-          </div>
-        </div>
-        <div class="container3">
-          <div id="topleft1">
-            <img src="imgs/boble.png" class="projicon3">
-          </div>
-          <div id="topright2">
-            <a href="https://www.figma.com/file/stkoDuZf5b27SkuaI8dLaY/Events?node-id=0%3A1" target="_blank"><h4> Boble</h4></a>
-            <p> Mockup of an online event-finding application for university students. </p>
-          </div>
-        </div>
-    </div>
 
-    <div id = "Misc" class = "tabcontent">
-      <div class="misctext">
-        <div class="textcontainer">
-          <p> This section is a small place for me to drop some of the things I love, outside of academia!</p>
-        </div>
-        <div class="textcontainer">
-          <p> - My favourite video game is <a href="https://store.steampowered.com/app/303310/The_House_in_Fata_Morgana/" target="_blank">The House in Fata Morgana</a>. 
-            Though, in terms of time investment, I have the most hours in <a href="https://www.leagueoflegends.com/en-us/" target="_blank">League / TFT</a> 
-            or <a href="https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/" target="_blank">Master Duel</a>. My favourite board game is <a href="https://boardgamegeek.com/boardgame/148319/tragedy-looper" target="_blank">Tragedy Looper</a>. </p>
+      <div id="Misc" class="tabcontent">
+        <div class="misctext">
+          <div class="textcontainer">
+            <p>
+              This section is a small place for me to drop some of the things I
+              love, outside of academia!
+            </p>
+          </div>
+          <div class="textcontainer">
+            <p>
+              - My favourite video game is
+              <a
+                href="https://store.steampowered.com/app/303310/The_House_in_Fata_Morgana/"
+                target="_blank"
+                >The House in Fata Morgana</a
+              >. Though, in terms of time investment, I have the most hours in
+              <a href="https://www.leagueoflegends.com/en-us/" target="_blank"
+                >League / TFT</a
+              >
+              or
+              <a
+                href="https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/"
+                target="_blank"
+                >Master Duel</a
+              >. My favourite board game is
+              <a
+                href="https://boardgamegeek.com/boardgame/148319/tragedy-looper"
+                target="_blank"
+                >Tragedy Looper</a
+              >.
+            </p>
 
-          <p>- My favourite show (and manga) is <a href="https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey%27s_End" target="_blank">Frieren: Beyond Journey's End</a>. I remember when the first chapter came out during the pandemic!</p>
+            <p>
+              - My favourite show (and manga) is
+              <a
+                href="https://en.wikipedia.org/wiki/Frieren:_Beyond_Journey%27s_End"
+                target="_blank"
+                >Frieren: Beyond Journey's End</a
+              >. I remember when the first chapter came out during the pandemic!
+            </p>
 
-          <p>- In terms of music, I listen to anything- from J-pop to C-pop to rock to hyperpop to classical. I play piano, and completed all my <a href="https://www.rcmusic.com/" target="_blank">RCM examinations</a>!</p>
+            <p>
+              - In terms of music, I listen to anything- from J-pop to C-pop to
+              rock to hyperpop to classical. I play piano, and completed all my
+              <a href="https://www.rcmusic.com/" target="_blank"
+                >RCM examinations</a
+              >!
+            </p>
 
-          <p>- I usually run the annual <a href="https://bmovanmarathon.ca/" target="_blank">Vancouver Marathon</a>! My current marathon goal is 3:15. I typically try to run 8-10km every day. 😊</p>
+            <p>
+              - I usually run the annual
+              <a href="https://bmovanmarathon.ca/" target="_blank"
+                >Vancouver Marathon</a
+              >! My current marathon goal is 3:15. I typically try to run 8-10km
+              every day. 😊
+            </p>
 
-          <p>- My favourite Pokemon is <a href="https://bulbapedia.bulbagarden.net/wiki/Sylveon_(Pok%C3%A9mon)" target="_blank">Sylveon</a>!</p>
+            <p>
+              - My favourite Pokemon is
+              <a
+                href="https://bulbapedia.bulbagarden.net/wiki/Sylveon_(Pok%C3%A9mon)"
+                target="_blank"
+                >Sylveon</a
+              >!
+            </p>
 
-          <p>- One of my mentees gifted me this Pikachu card, which I am very fond of.</p>
+            <p>
+              - One of my mentees gifted me this Pikachu card, which I am very
+              fond of.
+            </p>
+          </div>
 
-      </div>
-     
-      <div class="pikachu">
-        <img src="imgs/pikachu.jpg">
-      </div>
-      
+          <div class="pikachu">
+            <img src="imgs/pikachu.jpg" />
+          </div>
 
-
-
-        <!-- <div class="textcontainer">
+          <!-- <div class="textcontainer">
             <p> I have been a <span class="info"> Teaching Assistant </span> for 4 terms - 3 times for <span class = "bolder">CPSC304</span> (Introduction to Databases) and 1 time for <span class = "bolder">CPSC344</span> (Introduction to HCI).
         </div> -->
-       
+        </div>
+      </div>
+      <div id="footer">
+        <img src="imgs/moutains.jpg" alt="Footer Image" id="footer-image" />
+      </div>
     </div>
-  
-        
-        
-  </div>
-  <div id = "footer">
-    <img src="imgs/moutains.jpg" alt="Footer Image" id="footer-image">
-  </div>
-
-
-  
-
-
-    
-  
-  </div>
-</body>
+  </body>
 </html>
