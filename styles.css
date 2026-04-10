@@ -5,6 +5,12 @@ html {
 
 body {
   overflow-x: hidden;
+    opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.fonts-loaded {
+  opacity: 1;
 }
 
 /* ===== TYPOGRAPHY ===== */
