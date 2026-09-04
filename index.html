@@ -161,7 +161,7 @@
 
         <h1>Hello, I'm Michael!</h1>
         <h2>
-          I'm a 4th-year PhD candidate at UBC in Human-Computer Interaction
+          I'm a final year PhD candidate at UBC in Human-Computer Interaction
         </h2>
         <p>
           My research focus is about
@@ -195,8 +195,8 @@
         </p>
         <p>
           <span style="font-style: italic; font-weight: bold; color: navy">
-            💼 I will be exploring academic (Postdoc / Assistant Professor) and
-            industry (Research Scientist) positions starting in Fall 2026.
+            💼 I am exploring academic (Postdoc / Assistant Professor) and
+            industry (Research Scientist) positions, with start dates in Summer / Fall 2027.
           </span>
         </p>
         <p>
@@ -238,6 +238,13 @@
           </button>
           <button
             class="tag-btn"
+            onclick="filterTags('systems', this)"
+            data-active="false"
+          >
+            🔧 Systems
+          </button>
+          <button
+            class="tag-btn"
             onclick="filterTags('relationships', this)"
             data-active="false"
           >
@@ -266,7 +273,7 @@
           </button>
         </div>
 
-        <div class="container" data-tags="ai-design">
+        <div class="container" data-tags="systems">
           <div id="topleft1">
             <img loading="lazy" src="imgs/tap.jpg" class="projicon2" />
           </div>
@@ -577,7 +584,7 @@
           </div>
         </div>
 
-        <div class="container" data-tags="ar-vr">
+        <div class="container" data-tags="ar-vr,systems">
           <div id="topleft1">
             <img loading="lazy" src="imgs/vrnexus.png" class="projicon2" />
           </div>
