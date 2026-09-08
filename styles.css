@@ -125,7 +125,7 @@ p {
   padding-top: 20px;
 }
 
-#topleft1 {
+.topleft1 {
   float: left;
   width: 10%;
   margin: 0;
@@ -133,7 +133,7 @@ p {
   display: flex;
 }
 
-#topright1 {
+.topright1 {
   float: left;
   width: 85%;
   margin-left: 20px;
@@ -145,7 +145,7 @@ p {
   height: 100%;
 }
 
-#topright2 {
+.topright2 {
   float: left;
   width: 85%;
   margin-left: 20px;
