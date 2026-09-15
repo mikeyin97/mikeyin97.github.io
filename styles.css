@@ -425,10 +425,10 @@ input:checked + .slider:before {
   #content {
     width: 95%;
   }
-  #topleft1 {
+  .topleft1 {
     width: 10%;
   }
-  #topright1 {
+  .topright1 {
     width: 80%;
   }
   .first {
@@ -441,14 +441,14 @@ input:checked + .slider:before {
     width: 100%;
     margin: 0 auto;
   }
-  #topleft1 {
+  .topleft1 {
     display: none;
   }
   #topright {
     width: 100%;
     margin: 0px;
   }
-  #topright1 {
+  .topright1 {
     width: 100%;
     margin: 0px;
     padding: 0px;
